@@ -1,0 +1,6 @@
+Selam, !me komutunun sana getirdiği bazı şeyler var...
+Ad: Hüseyin Alpaslan
+Soyad: Özdemir
+Login: hozdemir
+Blackhole: 193 gün 15 saat 21 dakika 28 saniye
+Intra: https://api.intra.42.fr/v2/users/hozdemir

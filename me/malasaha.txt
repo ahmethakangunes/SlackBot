@@ -1,0 +1,6 @@
+Selam, !me komutunun sana getirdiği bazı şeyler var...
+Ad: Mert
+Soyad: Alaşahan
+Login: malasaha
+Blackhole: 165 gün 15 saat 36 dakika 50 saniye
+Intra: https://api.intra.42.fr/v2/users/malasaha

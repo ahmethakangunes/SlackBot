@@ -1,0 +1,6 @@
+Selam, !me komutunun sana getirdiği bazı şeyler var...
+Ad: Salih Burak
+Soyad: Çoşkun
+Login: scoskun
+Blackhole: 139 gün 15 saat 36 dakika 32 saniye
+Intra: https://api.intra.42.fr/v2/users/scoskun
