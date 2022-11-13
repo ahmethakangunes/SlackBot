@@ -1,0 +1,30 @@
+Selam, scoskun kullanıcısının bilgilerini getirdim.
+
+Ad: Salih Burak
+Soyad: Çoşkun
+Login: scoskun
+Intra: https://profile.intra.42.fr/users/scoskun
+Black Hole: 137 gün 17 saat 54 dakika 10 saniye
+Wallet: 141
+Masa: Aktif değil.
+Havuz: 2021 Ekim
+---------------------------------------- Projeler ----------------------------------------
+Proje: CPP Module 04 Puan: 80 Teslim Tarihi: 2022.11.12 Geçen zaman: 23 saat
+Proje: CPP Module 03 Puan: 100 Teslim Tarihi: 2022.11.10 Geçen zaman: 2 gün
+Proje: CPP Module 02 Puan: 80 Teslim Tarihi: 2022.11.09 Geçen zaman: 3 gün
+Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.10.31 Geçen zaman: 12 gün
+Proje: CPP Module 00 Puan: 80 Teslim Tarihi: 2022.10.24 Geçen zaman: 19 gün
+Proje: Exam Rank 04 Puan: 100 Teslim Tarihi: 2022.10.20 Geçen zaman: 24 gün
+Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.10.15 Geçen zaman: 28 gün
+Proje: cub3d Puan: 110 Teslim Tarihi: 2022.10.05 Geçen zaman: 39 gün
+Proje: minishell Puan: 98 Teslim Tarihi: 2022.09.01 Geçen zaman: 72 gün
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.07.08 Geçen zaman: 127 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.06.10 Geçen zaman: 156 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.06.04 Geçen zaman: 161 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.05.11 Geçen zaman: 186 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.03.04 Geçen zaman: 253 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.02.18 Geçen zaman: 267 gün
+Proje: Born2beroot Puan: 110 Teslim Tarihi: 2022.02.16 Geçen zaman: 269 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.10 Geçen zaman: 275 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.02 Geçen zaman: 284 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.13 Geçen zaman: 303 gün

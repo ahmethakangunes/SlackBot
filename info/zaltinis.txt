@@ -1,0 +1,14 @@
+Selam, zaltinis kullanıcısının bilgilerini getirdim.
+
+Ad: Zehra Nur
+Soyad: Altınışık
+Login: zaltinis
+Intra: https://profile.intra.42.fr/users/zaltinis
+Black Hole: 176 gün 16 saat 39 dakika 38 saniye önce aramızdan ayrıldı...
+Wallet: 0
+Havuz: None Hiçbiri
+---------------------------------------- Projeler ----------------------------------------
+Proje: Born2beroot Puan: 125 Teslim Tarihi: 2022.04.06 Geçen zaman: 221 gün
+Proje: ft_printf Puan: 125 Teslim Tarihi: 2022.04.06 Geçen zaman: 221 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.04.06 Geçen zaman: 221 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.04.06 Geçen zaman: 221 gün

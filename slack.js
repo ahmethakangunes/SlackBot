@@ -10,6 +10,7 @@ const fs = require('fs');
 const { response } = require('express');
 const PORT = process.env.PORT || 3000
 
+
 // SLACK BAĞLANTILARI //
 require('dotenv').config({path: '.env'})
 const token = process.env.BOT_TOKEN
@@ -18,6 +19,7 @@ const client = new WebClient(token)
 app.use('/slack/events', slackEvents.expressMiddleware())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 
 
 app.post('/ban', async (req, res) => {
@@ -30,7 +32,7 @@ app.post('/ban', async (req, res) => {
   text = text.split(" ");
   var login = text[0];
   var command = text[1];
-  if (mail != "ahmethakangunes24@gmail.com")
+  if (mail != "zehranuraltinisik.42istanbul@gmail.com")
       res.end("Bu işlem için yetkiniz yoktur.")
   else if (Object.keys(text).length != 2)
     res.end('Komutu yanlış girdiniz. Lütfen "/ban login day" şeklinde kullanın.');
@@ -49,7 +51,9 @@ app.post('/ban', async (req, res) => {
   }
 })
 
-app.post('/agu', async (req, res) => {
+
+app.post('/clear', async (req, res) => {
+    res.send("İşlem başladı. Tahmini süre 1 dakika.")
     const result = await client.users.info({
       user: req.body.user_id
     })
@@ -59,24 +63,30 @@ app.post('/agu', async (req, res) => {
     text = text.split(" ");
     var login = text[0];
     var command = text[1];
+    var list = []
     if (mail != "ahmethakangunes24@gmail.com")
         res.end("Bu işlem için yetkiniz yoktur.")
-    else if (Object.keys(text).length != 2)
-      res.end('Komutu yanlış girdiniz. Lütfen "/agu login işlem" şeklinde kullanın.');
-    else{
-      let options = {
-        pythonPath: '/usr/bin/python3.8',
-        scriptPath: '/root/slackbot',
-        args: [login, command]
-      };
-      await PythonShell.run('agu.py', options, async function (err, results) {
-        if (err)
-          res.end("Login veya işlem tipi yanlış.")
-        else
-          res.end("Öğrenci agu talep bilgisi güncellendi.")
-    });
-    }
+      axios({
+        method: 'post',
+        url: "http://46.101.183.51:2424/clear",
+      }).then(async (response) => {
+        response.data.map(async (element) => {
+          try{
+          list = await client.users.lookupByEmail({
+            email: element
+          })
+        }
+        catch (error) {
+          return [];
+        }
+          const message = client.chat.postMessage({
+            channel: req.body.user_id,
+            text: list['user']['profile']['email']
+          });
+        })
+      })
 })
+
 
 slackEvents.on("message", async(event) => {
     var id = event['user']
@@ -86,12 +96,15 @@ slackEvents.on("message", async(event) => {
       });
       login = result['user']['profile']['title']
       mail = result['user']['profile']['email']
+      command = event['text'].split(" ")
       if (event['text'] == "!belge")
         utils.belge(id, login, mail);
-      if (event['text'] == "!me")
+      else if (event['text'] == "!me")
         utils.me(id, login, mail);
-      if (event['text'] == "!agu")
+      else if (command['text'] == "!agu")
         utils.agu(id, login, mail);
+      else if (command[0] == "!info")
+        utils.info(id, command)
     }
     catch (error) {
       console.log(error)
@@ -101,7 +114,6 @@ slackEvents.on("message", async(event) => {
       });
     }
 })
-
 
 
 app.listen(PORT, () => {

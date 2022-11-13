@@ -13,6 +13,7 @@ def day(file, blackhole):
     li = list(blackhole.split())
     file.write("Black Hole: " + str(li[0]) + " gün ")
     li = li[2].split(":")
+    print((int(li[0])))
     file.write(li[0] + " saat " + li[1] + " dakika " + li[2] + " saniye" + "\n")
   
 
@@ -24,8 +25,8 @@ def getinfo(login, token):
     response = requests.get('https://api.intra.42.fr' + "{}".format(endpoint), headers=headers)
     if (response.status_code == 200):
       responsejs = response.json()
-      file = open(("me/" + login + ".txt"), "w")
-      file.write("Selam " + str(responsejs['first_name']).title() + ", !me komutunun sana getirdiği bazı şeyler var...\n")
+      file = open(("info/" + login + ".txt"), "w")
+      file.write("Selam " + str(responsejs['first_name']).title() + "bilgilerini getirdim.\n")
       file.write("Ad: " + str(responsejs['first_name']).title() + "\n")
       file.write("Soyad: " + str(responsejs['last_name']).title() + "\n")
       file.write("Login: " + str(responsejs['login']) + "\n")

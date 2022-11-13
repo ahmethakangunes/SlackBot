@@ -1,0 +1,40 @@
+Selam, esoylu kullanıcısının bilgilerini getirdim.
+
+Ad: Ertuğrul
+Soyad: Soylu
+Login: esoylu
+Intra: https://profile.intra.42.fr/users/esoylu
+Black Hole: Mezun
+Wallet: 645
+Masa: Aktif değil
+Havuz: 2021 Aralık
+---------------------------------------- Projeler ----------------------------------------
+Proje: ft_transcendence Puan: 100 Teslim Tarihi: 2022.09.08 Geçen zaman: 66 gün
+Proje: Exam Rank 06 Puan: 100 Teslim Tarihi: 2022.08.15 Geçen zaman: 90 gün
+Proje: ft_containers Puan: 100 Teslim Tarihi: 2022.08.14 Geçen zaman: 90 gün
+Proje: Exam Rank 05 Puan: 100 Teslim Tarihi: 2022.08.12 Geçen zaman: 93 gün
+Proje: Inception Puan: 100 Teslim Tarihi: 2022.08.03 Geçen zaman: 101 gün
+Proje: ft_irc Puan: 100 Teslim Tarihi: 2022.08.02 Geçen zaman: 102 gün
+Proje: Exam Rank 04 Puan: 100 Teslim Tarihi: 2022.07.02 Geçen zaman: 134 gün
+Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.06.30 Geçen zaman: 136 gün
+Proje: CPP Module 08 Puan: 100 Teslim Tarihi: 2022.06.27 Geçen zaman: 138 gün
+Proje: CPP Module 07 Puan: 80 Teslim Tarihi: 2022.06.27 Geçen zaman: 139 gün
+Proje: CPP Module 06 Puan: 100 Teslim Tarihi: 2022.06.27 Geçen zaman: 139 gün
+Proje: CPP Module 05 Puan: 100 Teslim Tarihi: 2022.06.27 Geçen zaman: 139 gün
+Proje: CPP Module 04 Puan: 80 Teslim Tarihi: 2022.06.26 Geçen zaman: 139 gün
+Proje: CPP Module 03 Puan: 80 Teslim Tarihi: 2022.06.26 Geçen zaman: 139 gün
+Proje: CPP Module 02 Puan: 80 Teslim Tarihi: 2022.06.26 Geçen zaman: 140 gün
+Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.06.22 Geçen zaman: 144 gün
+Proje: CPP Module 00 Puan: 80 Teslim Tarihi: 2022.06.22 Geçen zaman: 144 gün
+Proje: cub3d Puan: 100 Teslim Tarihi: 2022.06.12 Geçen zaman: 153 gün
+Proje: minishell Puan: 97 Teslim Tarihi: 2022.05.28 Geçen zaman: 169 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.05.10 Geçen zaman: 187 gün
+Proje: Philosophers Puan: 125 Teslim Tarihi: 2022.04.23 Geçen zaman: 203 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.02.18 Geçen zaman: 267 gün
+Proje: FdF Puan: 120 Teslim Tarihi: 2022.02.27 Geçen zaman: 259 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.02.17 Geçen zaman: 269 gün
+Proje: push_swap Puan: 125 Teslim Tarihi: 2022.02.26 Geçen zaman: 259 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.02.17 Geçen zaman: 269 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.10 Geçen zaman: 275 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.08 Geçen zaman: 278 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.02.07 Geçen zaman: 278 gün
