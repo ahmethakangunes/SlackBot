@@ -3,6 +3,9 @@ import requests
 from datetime import datetime
 import sys
 import os
+import sys
+import subprocess
+import re
 import docx2pdf
 from sys import argv
 
@@ -59,6 +62,7 @@ def belge(login, token):
     docx.save("belge/" + list[3] + ".docx")
     os.system("unoconv -f pdf " + "belge/" + str(login) + ".docx")
     os.system("rm -rf belge/" + str(login) + ".docx")
+    
     return (list)
 
 def getinfo(login, token):

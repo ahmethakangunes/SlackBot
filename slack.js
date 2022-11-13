@@ -8,6 +8,7 @@ const utils = require("./utils.js")
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const { response } = require('express');
+const { info } = require('console');
 const PORT = process.env.PORT || 3000
 
 
@@ -23,52 +24,63 @@ app.use(bodyParser.json());
 
 
 app.post('/ban', async (req, res) => {
+  if (req.body.user_name != "ahmethakangunes24")
+    res.end("Bu komut için yetkiniz bulunmamaktadır.")
   const result = await client.users.info({
     user: req.body.user_id
   })
-  mail = result['user']['profile']['email']
+  mail = result.user.profile.email
   var channel_id = req.body.channel_id;
   var text = req.body.text;
   text = text.split(" ");
   var login = text[0];
-  var command = text[1];
-  if (mail != "zehranuraltinisik.42istanbul@gmail.com")
-      res.end("Bu işlem için yetkiniz yoktur.")
-  else if (Object.keys(text).length != 2)
+  var day = text[1];
+  if (Object.keys(text).length != 2)
     res.end('Komutu yanlış girdiniz. Lütfen "/ban login day" şeklinde kullanın.');
+  else if (isNaN(text[1]))
+    res.end('Gün tipi yanlış. Lütfen kontrol ediniz')
+  else if (Number(text[1] < 1) || Number(text[1] > 20))
+    res.end("Gün en az 1 en fazla 20 olmalı.")
   else{
     let options = {
       pythonPath: '/usr/bin/python3.8',
       scriptPath: '/root/slackbot',
-      args: [login, command]
+      args: [login, day]
     };
     await PythonShell.run('ban.py', options, async function (err, results) {
       if (err)
-        res.end("Login veya işlem tipi yanlış.")
-      else
+        res.end("Bu logine ait bir kullanıcı bulunamadı. Lütfen kontrol ediniz.")
+      else{
+        const unban = await client.chat.scheduleMessage({
+          channel: req.body.channel_id,
+          post_at: parseInt((Date.now() / 1000) + 86400 * text[1]),
+          text: "!unban " + login
+        });
         res.end(login + " hesabı " + text[1] + " gün kapatıldı.")
+      }
   });
   }
 })
 
 
 app.post('/clear', async (req, res) => {
-    res.send("İşlem başladı. Tahmini süre 1 dakika.")
-    const result = await client.users.info({
-      user: req.body.user_id
-    })
-    mail = result['user']['profile']['email']
+    if (req.body.user_name != "ahmethakangunes24")
+    res.end("Bu komut için yetkiniz bulunmamaktadır.")
+    else
+    res.send("İşlem başladı. Tahmini süre 3 dakika.")
+      const result = await client.users.info({
+        user: req.body.user_id
+      })
+    mail = result.user.profile.email
     var channel_id = req.body.channel_id;
     var text = req.body.text;
     text = text.split(" ");
     var login = text[0];
     var command = text[1];
     var list = []
-    if (mail != "ahmethakangunes24@gmail.com")
-        res.end("Bu işlem için yetkiniz yoktur.")
       axios({
         method: 'post',
-        url: "http://46.101.183.51:2424/clear",
+        url: "http://localhost:2424/clear",
       }).then(async (response) => {
         response.data.map(async (element) => {
           try{
@@ -87,24 +99,63 @@ app.post('/clear', async (req, res) => {
       })
 })
 
+app.post('/info', async (req, res) => {
+    if (req.body.user_name != "ahmethakangunes24")
+      res.end("Bu komut için yetkiniz bulunmamaktadır.")
+    else
+      res.send("Lütfen mesaj kutunuzu kontrol edin.")
+    const result = await client.users.info({
+      user: req.body.user_id
+    })
+    mail = result.user.profile.email
+    id = req.body.user_id
+    channel = req.body.channel_id
+    command = req.body.text.split(" ")
+    if (Object.keys(command).length != 1)
+      res.end("Komutu yanlış girdiniz. Lütfen \"ban login day\" şeklinde kullanın.")
+    else{
+      login = command[0]
+      axios({
+        method: 'post',
+        url: "http://localhost:2424/info",
+        data: {
+          login: login,
+        }
+      }).then(async (response) => {
+        var data = fs.readFileSync('info/' + login + ".txt", 'utf8');
+        const result = await client.chat.postMessage({
+          channel: id,
+          text: data
+        });
+      }, (error) => {
+        const message = client.chat.postMessage({
+          channel: id,
+          text: "Bu logine ait bir kullanıcı bulunamadı."
+        });
+      });
+    }
+})
+
 
 slackEvents.on("message", async(event) => {
-    var id = event['user']
+    var id = event.user
     try {
       const result = await client.users.info({
         user: id
       });
-      login = result['user']['profile']['title']
-      mail = result['user']['profile']['email']
+      login = result.user.profile.title
+      mail = result.user.profile.email
       command = event['text'].split(" ")
       if (event['text'] == "!belge")
-        utils.belge(id, login, mail);
+        utils.belge(event, id, login, mail);
       else if (event['text'] == "!me")
-        utils.me(id, login, mail);
+        utils.me(event, id, login, mail);
       else if (command['text'] == "!agu")
         utils.agu(id, login, mail);
       else if (command[0] == "!info")
-        utils.info(id, command)
+        utils.info(event, id, command)
+      else if (command[0] == "!unban")
+        utils.unban(event, mail, command[1])
     }
     catch (error) {
       console.log(error)

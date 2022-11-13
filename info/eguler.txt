@@ -1,0 +1,24 @@
+Selam, eguler kullanıcısının bilgilerini getirdim.
+
+Ad: Eyüp
+Soyad: Güler
+Login: eguler
+Intra: https://profile.intra.42.fr/users/eguler
+Black Hole: 135 gün 10 saat 30 dakika 47 saniye
+Wallet: 105
+Masa: Aktif değil
+Havuz: 2021 Ekim
+---------------------------------------- Projeler ----------------------------------------
+Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.10.23 Geçen zaman: 21 gün
+Proje: cub3d Puan: 105 Teslim Tarihi: 2022.10.09 Geçen zaman: 35 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.09.23 Geçen zaman: 51 gün
+Proje: minishell Puan: 100 Teslim Tarihi: 2022.09.21 Geçen zaman: 53 gün
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.08.02 Geçen zaman: 103 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.06.13 Geçen zaman: 153 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.05.16 Geçen zaman: 181 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.03.17 Geçen zaman: 241 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.02.25 Geçen zaman: 261 gün
+Proje: Born2beroot Puan: 110 Teslim Tarihi: 2022.02.24 Geçen zaman: 262 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.19 Geçen zaman: 267 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.12 Geçen zaman: 274 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.20 Geçen zaman: 297 gün

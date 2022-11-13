@@ -1,0 +1,10 @@
+Selam, 3b3-123 kullanıcısının bilgilerini getirdim.
+
+Ad: 3B3
+Soyad: 123
+Login: 3b3-123
+Intra: https://profile.intra.42.fr/users/3b3-123
+Black Hole: Mezun
+Wallet: 530
+Havuz: Havuz bilgisi bulunamadı
+---------------------------------------- Projeler ----------------------------------------

@@ -1,4 +1,4 @@
-module.exports = { belge, me, agu, info};
+module.exports = { belge, me, agu, info, unban};
 const { PythonShell } = require('python-shell');
 const { WebClient, LogLevel } = require("@slack/web-api");
 const eventsApi = require('@slack/events-api')
@@ -16,10 +16,10 @@ const client = new WebClient(token)
 
 
 
-async function belge(id, login, mail){
+async function belge(event, id, login, mail){
   axios({
     method: 'post',
-    url: "http://46.101.183.51:2424/belge",
+    url: "http://localhost:2424/belge",
     data: {
       login: login,
       mail: mail,
@@ -31,16 +31,25 @@ async function belge(id, login, mail){
       initial_comment: "Selam " + response['data'] + ", belgeni getirdim.",
       file: fs.createReadStream("belge/" + login + ".pdf")
     });
+    const emoji = client.reactions.add({
+      channel: event.channel,
+      name: "white_check_mark",
+      timestamp: event.event_ts
+    });
   }, (error) => {
-    console.log(error);
     const message = client.chat.postMessage({
       channel: id,
       text: "Hata : Lütfen profilinizde bulunan \"Title\" bölümüne login bilginizi ekleyin."
     });
+    const emoji = client.reactions.add({
+      channel: event.channel,
+      name: "x",
+      timestamp: event.event_ts
+    });
   });
 }
   
-async function me(id, login, mail){
+async function me(event, id, login, mail){
   let options = {
     pythonPath: '/usr/bin/python3.8',
     scriptPath: '/root/slackbot',
@@ -59,8 +68,41 @@ async function me(id, login, mail){
           channel: id,
           text: data
         });
+        const emoji = await client.reactions.add({
+          channel: event.channel,
+          name: "white_check_mark",
+          timestamp: event.event_ts
+          });
     }
 });
+}
+
+async function unban(event, mail, login){
+  botid = event.bot_profile.id
+  if (botid == "B04AVNR1K16" || mail == "ahmethakangunes24@gmail.com"){
+    let options = {
+      pythonPath: '/usr/bin/python3.8',
+      scriptPath: '/root/slackbot',
+      args: [login]
+    };
+    await PythonShell.run('!unban.py', options, async function (err, results) {
+      if (err){
+        await client.chat.postMessage({
+          channel: event.id,
+          text: "Ban kaldırılamadı. Lütfen manuel olarak kaldırınız."
+        });
+      }
+      else{
+      const emoji = await client.reactions.add({
+        channel: event.channel,
+        name: "white_check_mark",
+        timestamp: event.event_ts
+        });
+      }
+    });
+  }
+  else
+    return ;
 }
   
 async function agu(id, login, mail){
@@ -78,14 +120,7 @@ async function agu(id, login, mail){
     }
 }
 
-async function info(id, command){
-  if (command[1] == undefined){
-    await client.chat.postMessage({
-      channel: id,
-      text: "Kullanıcı adı boş geçilemez."
-    });
-    return ;
-  }
+async function info(id, channelid){
   let options = {
     pythonPath: '/usr/bin/python3.8',
     scriptPath: '/root/slackbot',
@@ -94,14 +129,14 @@ async function info(id, command){
   await PythonShell.run('!info.py', options, async function (err, results) {
       if (err){
         const message = await client.chat.postMessage({
-          channel: id,
+          channel: channelid,
           text: "Kullanıcı bulunamadı."
         });
       }
       else{
         var data = fs.readFileSync('info/' + command[1] + ".txt", 'utf8');
         const result = await client.chat.postMessage({
-          channel: id,
+          channel: channelid,
           text: data
         });
     }

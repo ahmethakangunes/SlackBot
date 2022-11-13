@@ -1,0 +1,11 @@
+Selam, test kullanıcısının bilgilerini getirdim.
+
+Ad: Tata
+Soyad: Est
+Login: test
+Intra: https://profile.intra.42.fr/users/test
+Black Hole: 275 gün 13 saat 58 dakika 59 saniye
+Wallet: 147
+Masa: Aktif değil
+Havuz: 2021 Ekim
+---------------------------------------- Projeler ----------------------------------------

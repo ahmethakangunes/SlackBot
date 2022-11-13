@@ -53,7 +53,7 @@ def project(file, responsejs):
           if (project == "Libft"):
             break
           
-def location(login, file):
+def location(login, file, token):
     headers = {
     'Authorization': 'Bearer ' + token,
     }
@@ -76,7 +76,7 @@ def getinfo(login, token):
     response = requests.get('https://api.intra.42.fr' + "{}".format(endpoint), headers=headers)
     if (response.status_code == 200):
       responsejs = response.json()
-      file = open(("me/" + login + ".txt"), "w")
+      file = open(("info/" + login + ".txt"), "w")
       file.write("Selam, " + str(responsejs['login']) + " kullanıcısının bilgilerini getirdim." + "\n" * 2)
       file.write("Ad: " + str(responsejs['first_name']).title() + "\n")
       file.write("Soyad: " + str(responsejs['last_name']).title() + "\n")
@@ -84,7 +84,7 @@ def getinfo(login, token):
       file.write("Intra: " + "https://profile.intra.42.fr/users/" + str(responsejs['login']) + "\n")
       day(file, responsejs['cursus_users'][1]['blackholed_at'])
       file.write("Wallet: " + str(responsejs['wallet']) + "\n")
-      location(login, file)
+      location(login, file, token)
       if (responsejs['cursus_users'][0]['user']['pool_year'] != None):
         file.write("Havuz: " + str(responsejs['cursus_users'][0]['user']['pool_year']))
         tsmonth = ts.google(str(responsejs['cursus_users'][0]['user']['pool_month']), from_language='en', to_language='tr').split(" ")[0].title()
@@ -96,15 +96,3 @@ def getinfo(login, token):
       project(file, responsejs)
     else:
       exit (1)
-    
-
-def get_access_token():
-  response = requests.post(
-    "https://api.intra.42.fr/oauth/token",
-    data={"grant_type": "client_credentials"},
-    auth=("u-s4t2ud-05b797961e39f9ca81738308f9b2a7e2ed752549806393581cf56fc0685062bb", "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"),
-  )
-  return response.json()["access_token"]
-
-token = get_access_token()
-getinfo(sys.argv[1], token)
