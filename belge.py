@@ -1,8 +1,10 @@
 from docx import Document
 import requests
 from datetime import datetime
+import time
 import sys
 import os
+import pandas as pd
 import sys
 import subprocess
 import re
@@ -48,7 +50,21 @@ class DocxKeyWordsReplace:
             for x, paragraph in enumerate(self.paragraphs):
                 ParagraphsKeyWordsReplace.p_replace(paragraph,x,key,value)
 
-def belge(login, token):
+def personalmails(login):
+    df = pd.read_excel('mails.xlsx')
+    df.dropna(inplace = True)
+    searchindex = (df.loc[df['byalcink'] == login])
+    tolist = searchindex.values.tolist()
+    if (len(tolist) > 0):
+        mail = tolist[0][1]
+        return mail
+    else:
+        return "ahmethakangunessds24@gmail.com"
+
+def belge(login, token, mail):
+    personalmail = personalmails(login)
+    if (mail != personalmail):
+        return ("false")
     list = getinfo(login, token)
     replace_dict = {
         "Davut Uzun": str(list[1].title()) + " " + str(list[2].title()),
@@ -60,9 +76,8 @@ def belge(login, token):
     docx = Document("belge/student.docx")
     DocxKeyWordsReplace.content(docx, replace_dict=replace_dict)
     docx.save("belge/" + list[3] + ".docx")
-    os.system("unoconv -f pdf " + "belge/" + str(login) + ".docx")
-    os.system("rm -rf belge/" + str(login) + ".docx")
-    
+    subprocess.run(f"unoconv -f pdf belge/{str(login)}.docx", shell=True)
+    subprocess.run(f"rm -rf belge/{str(login)}.docx", shell=True)
     return (list)
 
 def getinfo(login, token):

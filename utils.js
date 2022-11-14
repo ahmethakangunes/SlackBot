@@ -16,69 +16,120 @@ const client = new WebClient(token)
 
 
 
-async function belge(event, id, login, mail){
+async function belge(event, id, login, slackmail){
   axios({
     method: 'post',
     url: "http://localhost:2424/belge",
     data: {
       login: login,
-      mail: mail,
+      mail: slackmail,
       id: id
     }
-  }).then((response) => {
-    const file = client.files.upload({
-      channels: id,
-      initial_comment: "Selam " + response['data'] + ", belgeni getirdim.",
-      file: fs.createReadStream("belge/" + login + ".pdf")
-    });
-    const emoji = client.reactions.add({
-      channel: event.channel,
-      name: "white_check_mark",
-      timestamp: event.event_ts
-    });
-  }, (error) => {
+  }).then(async (response) => {
+    if (response.data == "A"){
+      const message = await client.chat.postMessage({
+        channel: id,
+        text: "Title ve mail uyumsuz. Gerekli düzenlemeyi yaptıktan sonra tekrar deneyin."
+      });
+      const emoji = await client.reactions.add({
+        channel: event.channel,
+        name: "x",
+        timestamp: event.event_ts
+        });
+      return ;
+    }
+    try {
+    const file = await client.files.upload({
+        channels: id,
+        initial_comment: "Selam " + response['data'] + ", belgeni getirdim.",
+        file: fs.createReadStream("belge/" + login + ".pdf")
+      });
+      const emoji = await client.reactions.add({
+        channel: event.channel,
+        name: "white_check_mark",
+        timestamp: event.event_ts
+      });
+    }
+    catch (error){
+    }
+  }, async (error) => {
+    try{
     const message = client.chat.postMessage({
       channel: id,
-      text: "Hata : Lütfen profilinizde bulunan \"Title\" bölümüne login bilginizi ekleyin."
+      text: "Lütfen biraz sonra tekrar deneyin."
     });
     const emoji = client.reactions.add({
       channel: event.channel,
       name: "x",
       timestamp: event.event_ts
-    });
+      });
+    }
+    catch(error){
+
+    }
   });
 }
   
-async function me(event, id, login, mail){
+async function me(event, id, login, slackmail){
   let options = {
     pythonPath: '/usr/bin/python3.8',
     scriptPath: '/root/slackbot',
-    args: [login]
+    args: [login, slackmail]
   };
   await PythonShell.run('!me.py', options, async function (err, results) {
       if (err){
         const message = await client.chat.postMessage({
           channel: id,
-          text: "Hata : Lütfen profilinizde bulunan \"Title\" bölümüne login bilginizi ekleyin."
+          text: "Lütfen biraz sonra tekrar deneyin."
         });
-      }
-      else{
-        var data = fs.readFileSync('me/' + login + ".txt", 'utf8');
-        const result = await client.chat.postMessage({
-          channel: id,
-          text: data
-        });
+        try {
         const emoji = await client.reactions.add({
           channel: event.channel,
-          name: "white_check_mark",
+          name: "x",
           timestamp: event.event_ts
           });
+        }
+        catch(error){
+
+        }
+      }
+      else if (results[0] != 'Hata')
+      {
+        try{
+          var data = fs.readFileSync('me/' + login + ".txt", 'utf8');
+          const result = await client.chat.postMessage({
+            channel: id,
+            text: data
+          });
+          const emoji = await client.reactions.add({
+            channel: event.channel,
+            name: "white_check_mark",
+            timestamp: event.event_ts
+          });
+      }
+      catch (error){
+        const emoji = await client.reactions.add({
+          channel: event.channel,
+          name: "x",
+          timestamp: event.event_ts
+        });
+      }
+    }
+    else{
+      const message = await client.chat.postMessage({
+        channel: id,
+        text: "Title ve mail uyumsuz. Gerekli düzenlemeyi yaptıktan sonra tekrar deneyin."
+      });
+      const emoji = await client.reactions.add({
+        channel: event.channel,
+        name: "x",
+        timestamp: event.event_ts
+      });
     }
 });
 }
 
 async function unban(event, mail, login){
-  botid = event.bot_profile.id
   if (botid == "B04AVNR1K16" || mail == "ahmethakangunes24@gmail.com"){
     let options = {
       pythonPath: '/usr/bin/python3.8',

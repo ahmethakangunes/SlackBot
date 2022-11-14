@@ -1,0 +1,17 @@
+Selam, kgokhan kullanıcısının bilgilerini getirdim.
+
+Ad: Kadir
+Soyad: Gokhan
+Login: kgokhan
+Intra: https://profile.intra.42.fr/users/kgokhan
+Black Hole: Mezun
+Wallet: 145
+Havuz: Havuz bilgisi bulunamadı
+---------------------------------------- Projeler ----------------------------------------
+Proje: FdF Puan: 125 Teslim Tarihi: 2022.01.28 Geçen zaman: 290 gün
+Proje: pipex Puan: 125 Teslim Tarihi: 2022.01.28 Geçen zaman: 290 gün
+Proje: push_swap Puan: 125 Teslim Tarihi: 2022.01.28 Geçen zaman: 290 gün
+Proje: ft_printf Puan: 125 Teslim Tarihi: 2022.01.17 Geçen zaman: 300 gün
+Proje: Born2beroot Puan: 125 Teslim Tarihi: 2022.01.17 Geçen zaman: 300 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.01.15 Geçen zaman: 302 gün
+Proje: Libft Puan: 100 Teslim Tarihi: 2022.01.02 Geçen zaman: 315 gün

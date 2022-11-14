@@ -1,10 +1,21 @@
 import requests
 import time
 import dateutil.parser
+import pandas as pd
 from datetime import datetime
-import translators as ts
 import sys
 from sys import argv
+
+def personalmails(login):
+    df = pd.read_excel('mails.xlsx')
+    df.dropna(inplace = True)
+    searchindex = (df.loc[df['byalcink'] == login])
+    tolist = searchindex.values.tolist()
+    if (len(tolist) > 0):
+        mail = tolist[0][1]
+        return mail
+    else:
+        return "ahmethakangunessds24@gmail.com"
 
 def day(file, blackhole):
     if (blackhole != None):
@@ -39,7 +50,7 @@ def day2(time):
     return(li[0] + " gün")
 
 def project(file, responsejs):
-    file.write("-" * 40 + " Projeler " + "-" * 40 + "\n")
+    file.write("\n" + "-" * 40 + " Projeler " + "-" * 40 + "\n")
     for i in range(len(responsejs['projects_users'])):
         status = responsejs['projects_users'][i]['status']
         point = responsejs['projects_users'][i]['final_mark']
@@ -68,7 +79,13 @@ def location(login, file):
       else:
           file.write("Masa: Aktif değil" + "\n")
 
-def getinfo(login, token):
+def getinfo(login, slackmail, token):
+    personalmail = personalmails(login)
+    if (slackmail != personalmail):
+        print ("Hata")
+        return
+    else:
+      print("OK")
     headers = {
     'Authorization': 'Bearer ' + token,
     }
@@ -77,7 +94,7 @@ def getinfo(login, token):
     if (response.status_code == 200):
       responsejs = response.json()
       file = open(("me/" + login + ".txt"), "w")
-      file.write("Selam, " + str(responsejs['login']) + " kullanıcısının bilgilerini getirdim." + "\n" * 2)
+      file.write("Selam, " + str(responsejs['usual_full_name']) + " bilgilerini getirdim." + "\n" * 2)
       file.write("Ad: " + str(responsejs['first_name']).title() + "\n")
       file.write("Soyad: " + str(responsejs['last_name']).title() + "\n")
       file.write("Login: " + str(responsejs['login']) + "\n")
@@ -87,15 +104,11 @@ def getinfo(login, token):
       location(login, file)
       if (responsejs['cursus_users'][0]['user']['pool_year'] != None):
         file.write("Havuz: " + str(responsejs['cursus_users'][0]['user']['pool_year']))
-        tsmonth = ts.google(str(responsejs['cursus_users'][0]['user']['pool_month']), from_language='en', to_language='tr').split(" ")[0].title()
-        if (str(tsmonth) == "Aralik"):
-            tsmonth = tsmonth.replace("i", "ı")
-        file.write(" " + tsmonth + "\n")
       else:
         file.write("Havuz: Havuz bilgisi bulunamadı" + "\n")
       project(file, responsejs)
     else:
-      exit (1)
+      print(response.status_code)
     
 
 def get_access_token():
@@ -107,4 +120,4 @@ def get_access_token():
   return response.json()["access_token"]
 
 token = get_access_token()
-getinfo(sys.argv[1], token)
+getinfo(sys.argv[1], sys.argv[2],token)

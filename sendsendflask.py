@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route("/belge", methods=['POST'])
 async def docx():
     token = get_access_token()
-    list = belge(request.json['login'], token)
+    list = belge(request.json['login'], token, request.json['mail'])
     return list[1].title()
 
 @app.route("/clear", methods=['POST'])

@@ -1,26 +1,8 @@
-Selam, agunes kullanıcısının bilgilerini getirdim.
+Selam, Ahmet Hakan Güneş bilgilerini getirdim.
 
 Ad: Ahmet Hakan
 Soyad: Güneş
 Login: agunes
 Intra: https://profile.intra.42.fr/users/agunes
-Black Hole: 138 gün 8 saat 51 dakika 50 saniye
+Black Hole: 137 gün 7 saat 59 dakika 20 saniye
 Wallet: 150
-Masa: Aktif değil
-Havuz: 2021 Ekim
----------------------------------------- Projeler ----------------------------------------
-Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.10.31 Geçen zaman: 13 gün
-Proje: CPP Module 00 Puan: 80 Teslim Tarihi: 2022.10.24 Geçen zaman: 20 gün
-Proje: Exam Rank 04 Puan: 100 Teslim Tarihi: 2022.10.21 Geçen zaman: 23 gün
-Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.10.18 Geçen zaman: 26 gün
-Proje: cub3d Puan: 110 Teslim Tarihi: 2022.10.05 Geçen zaman: 39 gün
-Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.09.05 Geçen zaman: 69 gün
-Proje: minishell Puan: 98 Teslim Tarihi: 2022.09.01 Geçen zaman: 73 gün
-Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.07.26 Geçen zaman: 110 gün
-Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.06.10 Geçen zaman: 156 gün
-Proje: push_swap Puan: 84 Teslim Tarihi: 2022.06.04 Geçen zaman: 162 gün
-Proje: so_long Puan: 100 Teslim Tarihi: 2022.05.13 Geçen zaman: 184 gün
-Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.23 Geçen zaman: 263 gün
-Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.08 Geçen zaman: 278 gün
-Proje: Born2beroot Puan: 125 Teslim Tarihi: 2022.02.07 Geçen zaman: 279 gün
-Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.24 Geçen zaman: 293 gün

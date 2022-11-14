@@ -1,7 +1,8 @@
-Selam Mert, !me komutunun sana getirdiği bazı şeyler var...
+Selam, Mert Alaşahan bilgilerini getirdim.
+
 Ad: Mert
 Soyad: Alaşahan
 Login: malasaha
-Black Hole: 164 gün 18 saat 11 dakika 27 saniye
-Wallet: 150
 Intra: https://profile.intra.42.fr/users/malasaha
+Black Hole: 162 gün 12 saat 18 dakika 37 saniye
+Wallet: 150
