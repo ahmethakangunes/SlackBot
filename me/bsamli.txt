@@ -1,7 +1,15 @@
-Selam Berat, !me komutunun sana getirdiği bazı şeyler var...
+Selam, Berat Şamlı bilgilerini getirdim.
+
 Ad: Berat
 Soyad: Şamlı
 Login: bsamli
-Black Hole: 175 gün 13 saat 34 dakika 54 saniye
-Wallet: 15
 Intra: https://profile.intra.42.fr/users/bsamli
+Part: 1
+Black Hole: 171 gün 11 saat 28 dakika 04 saniye
+Wallet: 15
+Masa: Aktif değil
+Havuz: 2022
+---------------------------------------- Projeler ----------------------------------------
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.11.01 Geçen zaman: 14 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.10.26 Geçen zaman: 19 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.10.23 Geçen zaman: 23 gün

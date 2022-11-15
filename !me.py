@@ -49,6 +49,29 @@ def day2(time):
       return (li[0] + " saat")
     return(li[0] + " gün")
 
+def part(file, responsejs):
+    part = 1
+    projectcount = 0
+    examrank02 = 0
+    examrank03 = 0
+    for i in range(len(responsejs['projects_users'])):
+        status = responsejs['projects_users'][i]['status']
+        point = responsejs['projects_users'][i]['final_mark']
+        if (status == "finished" and int(point) > 75):
+          projectcount += 1
+          project = responsejs['projects_users'][i]['project']['name']
+          if (project == "Exam Rank 02"):
+            examrank02 += 1
+          if (project == "Exam Rank 03"):
+            examrank03 += 1
+          if (examrank02 == 1 and projectcount >= 8):
+              part = 2
+          if (examrank03 == 1 and projectcount >= 22):
+              part = 3
+          if (project == "Libft"):       
+            file.write("Part: " + str(part) + "\n")
+            break
+
 def project(file, responsejs):
     file.write("\n" + "-" * 40 + " Projeler " + "-" * 40 + "\n")
     for i in range(len(responsejs['projects_users'])):
@@ -98,6 +121,7 @@ def getinfo(login, slackmail, token):
       file.write("Ad: " + str(responsejs['first_name']).title() + "\n")
       file.write("Soyad: " + str(responsejs['last_name']).title() + "\n")
       file.write("Login: " + str(responsejs['login']) + "\n")
+      part(file, responsejs)
       file.write("Intra: " + "https://profile.intra.42.fr/users/" + str(responsejs['login']) + "\n")
       day(file, responsejs['cursus_users'][1]['blackholed_at'])
       file.write("Wallet: " + str(responsejs['wallet']) + "\n")

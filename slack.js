@@ -90,6 +90,7 @@ app.post('/info', async (req, res) => {
           
         }
       }, (error) => {
+        print(error)
         const message = client.chat.postMessage({
           channel: id,
           text: "Bu logine ait bir kullanıcı bulunamadı."
