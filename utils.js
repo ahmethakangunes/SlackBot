@@ -74,7 +74,7 @@ async function belge(event, id, login, slackmail){
 async function me(event, id, login, slackmail){
   let options = {
     pythonPath: '/usr/bin/python3.8',
-    scriptPath: '/root/slackbot',
+    scriptPath: '/root/SlackBot',
     args: [login, slackmail]
   };
   await PythonShell.run('!me.py', options, async function (err, results) {
@@ -134,7 +134,7 @@ async function unban(event, mail, login){
   if (botid == "B04AVNR1K16" || mail == "ahmethakangunes24@gmail.com"){
     let options = {
       pythonPath: '/usr/bin/python3.8',
-      scriptPath: '/root/slackbot',
+      scriptPath: '/root/SlackBot',
       args: [login]
     };
     await PythonShell.run('!unban.py', options, async function (err, results) {
@@ -168,7 +168,6 @@ async function agu(event, id, login, slackmail){
       id: id
     }
   }).then(async (response) => {
-    console.log(response)
     if (response.data == "A"){
       const message = await client.chat.postMessage({
         channel: id,
@@ -195,7 +194,6 @@ async function agu(event, id, login, slackmail){
     catch (error){
     }
   }, async (error) => {
-    console.log(error)
     try{
     const message = client.chat.postMessage({
       channel: id,

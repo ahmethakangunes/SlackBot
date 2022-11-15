@@ -1,6 +1,7 @@
 from docx import Document
 import requests
 from datetime import datetime
+import datetime
 import time
 import sys
 import os
@@ -49,14 +50,20 @@ class DocxKeyWordsReplace:
             for x, paragraph in enumerate(self.paragraphs):
                 ParagraphsKeyWordsReplace.p_replace(paragraph,x,key,value)
 
-def personalmails(login):
-    df = pd.read_excel('mails.xlsx')
-    df.dropna(inplace = True)
-    searchindex = (df.loc[df['byalcink'] == login])
+def personalinfos(login):
+    gsheetid = "1WfPZBxW5RhMX5o5jk352f9ZWVxCpMXoe"
+    sheet_name = ""
+    gsheet_url = "https://docs.google.com/spreadsheets/d/{}/gviz/tq?tqx=out:csv&sheet={}".format(gsheetid, sheet_name)
+    df = pd.read_csv(gsheet_url)
+    searchindex = (df.loc[df["Login"] == login])
     tolist = searchindex.values.tolist()
+    infolist = []
     if (len(tolist) > 0):
-        mail = tolist[0][1]
-        return mail
+        converdatetime = datetime.datetime.strptime(tolist[0][2], "%Y-%m-%d")
+        convertformat = converdatetime.strftime('%d.%m.%Y')
+        infolist.append(convertformat)
+        infolist.append(tolist[0][3])
+        return infolist
     else:
         return "ahmethakangunessds24@gmail.com"
     
@@ -73,20 +80,21 @@ def getinfo(login, token):
         list.append(responsejs['first_name'])
         list.append(responsejs['last_name'])
         list.append(responsejs['login'])
-        list.append(datetime.today().strftime("%d.%m.%Y"))
+        list.append(datetime.datetime.today().strftime("%d.%m.%Y"))
         return (list)
     else:
         exit (1)
 
 def belge(login, token, slackmail):
-    personalmail = personalmails(login)
-    if (slackmail != personalmail):
+    personal = personalinfos(login)
+    if (slackmail != personal[1]):
         return ("false")
     list = getinfo(login, token)
     replace_dict = {
         "Davut Uzun": str(list[1].title()) + " " + str(list[2].title()),
         "DAVUT": str(list[1]).title(),
         "UZUN": str(list[2].title()),
+        "12.08.1973": str(personal[0]), 
         "100491": str(list[0]),
         "31.10.2022": list[4]
         }
