@@ -2,17 +2,31 @@ from flask import Flask, request, jsonify
 from flask import jsonify
 import sys
 import json
+from agu import aguinfo
 from belge import get_access_token
+from ratelimit import limits
 from belge import belge
 from blackhole import getmails
 from info import getinfo
 app = Flask(__name__)
 
 @app.route("/belge", methods=['POST'])
-async def docx():
+@limits(calls=1, period=1)
+def docx():
+    login = request.json['login']
+    slackmail = request.json['mail']
     token = get_access_token()
-    list = belge(request.json['login'], token, request.json['mail'])
+    list = belge(login, token, slackmail)
     return list[1].title()
+
+@limits(calls=1, period=1)
+@app.route("/agu", methods=['POST'])
+async def agu():
+    login = request.json['login']
+    slackmail = request.json['mail']
+    token = get_access_token()
+    list = aguinfo(login, token, slackmail)
+    return (list[1].title())
 
 @app.route("/clear", methods=['POST'])
 async def clear():

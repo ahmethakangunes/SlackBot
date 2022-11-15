@@ -110,13 +110,14 @@ slackEvents.on("message", async(event) => {
         user: id
       });
       login = result.user.profile.title
-      mail = result.user.profile.email
+      slackmail = result.user.profile.email
       command = event['text'].split(" ")
-       if (event['text'] == "!belge")
-        utils.belge(event, id, login, mail);
-      if (event['text'] == "!me")
-        utils.me(event, id, login, mail);
-        
+      if (event['text'] == "!belge")
+        utils.belge(event, id, login, slackmail);
+      else if (event['text'] == "!me")
+        utils.me(event, id, login, slackmail);
+      else if (event['text'] == "!agu")
+        utils.agu(event, id, login, slackmail);
     }
     catch (error) {
       const result = await client.chat.postMessage({

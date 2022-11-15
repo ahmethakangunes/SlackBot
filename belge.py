@@ -60,26 +60,7 @@ def personalmails(login):
         return mail
     else:
         return "ahmethakangunessds24@gmail.com"
-
-def belge(login, token, mail):
-    personalmail = personalmails(login)
-    if (mail != personalmail):
-        return ("false")
-    list = getinfo(login, token)
-    replace_dict = {
-        "Davut Uzun": str(list[1].title()) + " " + str(list[2].title()),
-        "DAVUT": str(list[1]).title(),
-        "UZUN": str(list[2].title()),
-        "100491": str(list[0]),
-        "31.10.2022": list[4]
-        }
-    docx = Document("belge/student.docx")
-    DocxKeyWordsReplace.content(docx, replace_dict=replace_dict)
-    docx.save("belge/" + list[3] + ".docx")
-    subprocess.run(f"unoconv -f pdf belge/{str(login)}.docx", shell=True)
-    subprocess.run(f"rm -rf belge/{str(login)}.docx", shell=True)
-    return (list)
-
+    
 def getinfo(login, token):
     headers = {
     'Authorization': 'Bearer ' + token,
@@ -97,6 +78,25 @@ def getinfo(login, token):
         return (list)
     else:
         exit (1)
+
+def belge(login, token, slackmail):
+    personalmail = personalmails(login)
+    if (slackmail != personalmail):
+        return ("false")
+    list = getinfo(login, token)
+    replace_dict = {
+        "Davut Uzun": str(list[1].title()) + " " + str(list[2].title()),
+        "DAVUT": str(list[1]).title(),
+        "UZUN": str(list[2].title()),
+        "100491": str(list[0]),
+        "31.10.2022": list[4]
+        }
+    docx = Document("belge/student.docx")
+    DocxKeyWordsReplace.content(docx, replace_dict=replace_dict)
+    docx.save("belge/" + list[3] + ".docx")
+    os.system("unoconv -f pdf " + "belge/" + str(login) + ".docx")
+    os.system("rm -rf belge/" + str(login) + ".docx")
+    return (list)
 
 def get_access_token():
   response = requests.post(
