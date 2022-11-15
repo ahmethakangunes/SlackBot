@@ -2,7 +2,6 @@ import requests
 import time
 import dateutil.parser
 from datetime import datetime
-import translators as ts
 import sys
 from sys import argv
 

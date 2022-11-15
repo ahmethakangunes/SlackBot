@@ -8,7 +8,6 @@ import pandas as pd
 import sys
 import subprocess
 import re
-import docx2pdf
 from sys import argv
 
 class ParagraphsKeyWordsReplace:

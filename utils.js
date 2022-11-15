@@ -40,12 +40,12 @@ async function belge(event, id, login, slackmail){
       return ;
     }
     try {
-    const file = await client.files.upload({
-        channels: belgechannel,
-        initial_comment: response['data'] + " öğrenci belgesi.",
+      const file = client.files.upload({
+        channels: id,
+        initial_comment: "Selam " + response['data'] + ", belgeni getirdim.",
         file: fs.createReadStream("belge/" + login + ".pdf")
       });
-      const emoji = await client.reactions.add({
+      const emoji = client.reactions.add({
         channel: event.channel,
         name: "white_check_mark",
         timestamp: event.event_ts

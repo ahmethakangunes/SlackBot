@@ -110,14 +110,13 @@ slackEvents.on("message", async(event) => {
         user: id
       });
       login = result.user.profile.title
-      slackmail = result.user.profile.email
+      mail = result.user.profile.email
       command = event['text'].split(" ")
-      if (event['text'] == "!belge")
-        utils.belge(event, id, login, slackmail);
-      else if (event['text'] == "!me")
-        utils.me(event, id, login, slackmail);
-      else if (event['text'] == "!agu")
-        utils.agu(event, id, login, slackmail);
+       if (event['text'] == "!belge")
+        utils.belge(event, id, login, mail);
+      if (event['text'] == "!me")
+        utils.me(event, id, login, mail);
+        
     }
     catch (error) {
       const result = await client.chat.postMessage({
@@ -129,5 +128,5 @@ slackEvents.on("message", async(event) => {
 })
 
 app.listen(PORT, () => {
-    console.log("Çalışıyor bremin...")
+    console.log("Running..")
 })
