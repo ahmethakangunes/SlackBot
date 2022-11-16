@@ -1,4 +1,4 @@
-module.exports = { belge, me, agu, info, unban};
+module.exports = { belge, me, info, unban, exam};
 const { PythonShell } = require('python-shell');
 const { WebClient, LogLevel } = require("@slack/web-api");
 const eventsApi = require('@slack/events-api')
@@ -40,15 +40,15 @@ async function belge(event, id, login, slackmail){
       return ;
     }
     try {
-      const file = client.files.upload({
-        channels: id,
-        initial_comment: "Selam " + response['data'] + ", belgeni getirdim.",
-        file: fs.createReadStream("belge/" + login + ".pdf")
-      });
       const emoji = client.reactions.add({
         channel: event.channel,
         name: "white_check_mark",
         timestamp: event.event_ts
+      });
+      const file = client.files.upload({
+        channels: id,
+        initial_comment: "Selam " + response['data'] + ", belgeni getirdim.",
+        file: fs.createReadStream("belge/" + login + ".pdf")
       });
     }
     catch (error){
@@ -156,59 +156,9 @@ async function unban(event, mail, login){
   else
     return ;
 }
-  
-async function agu(event, id, login, slackmail){
-  aguchannel = "C04AVCW31MK"
-  axios({
-    method: 'post',
-    url: "http://localhost:2424/agu",
-    data: {
-      login: login,
-      mail: slackmail,
-      id: id
-    }
-  }).then(async (response) => {
-    if (response.data == "A"){
-      const message = await client.chat.postMessage({
-        channel: id,
-        text: "Title ve mail uyumsuz. Gerekli düzenlemeyi yaptıktan sonra tekrar deneyin."
-      });
-      const emoji = await client.reactions.add({
-        channel: event.channel,
-        name: "x",
-        timestamp: event.event_ts
-        });
-      return ;
-    }
-    try {
-      const message = await client.chat.postMessage({
-        channel: aguchannel,
-        text: "test."
-      });
-      const emoji = await client.reactions.add({
-        channel: event.channel,
-        name: "white_check_mark",
-        timestamp: event.event_ts
-        });
-    }
-    catch (error){
-    }
-  }, async (error) => {
-    try{
-    const message = client.chat.postMessage({
-      channel: id,
-      text: "Lütfen biraz sonra tekrar deneyin."
-    });
-    const emoji = client.reactions.add({
-      channel: event.channel,
-      name: "x",
-      timestamp: event.event_ts
-      });
-    }
-    catch(error){
 
-    }
-  });
+async function exam(login){
+    console.log(login)
 }
 
 async function info(id, channelid){

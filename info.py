@@ -43,9 +43,12 @@ def part(file, responsejs):
     examrank02 = 0
     examrank03 = 0
     for i in range(len(responsejs['projects_users'])):
+        if (int(responsejs['projects_users'][i]['project']['id']) < 1314):
+          file.write("Part: 1" + "\n")
+          break
         status = responsejs['projects_users'][i]['status']
         point = responsejs['projects_users'][i]['final_mark']
-        if (status == "finished" and int(point) > 75):
+        if (status == "finished" and int(point) > 70):
           projectcount += 1
           project = responsejs['projects_users'][i]['project']['name']
           if (project == "Exam Rank 02"):
@@ -63,6 +66,9 @@ def part(file, responsejs):
 def project(file, responsejs):
     file.write("-" * 40 + " Projeler " + "-" * 40 + "\n")
     for i in range(len(responsejs['projects_users'])):
+        if (int(responsejs['projects_users'][i]['project']['id']) < 1314):
+          file.write("Proje bilgisi bulunamadı.")
+          break
         status = responsejs['projects_users'][i]['status']
         point = responsejs['projects_users'][i]['final_mark']
         if (status == "finished" and int(point) > 75):
@@ -105,7 +111,8 @@ def getinfo(login, token):
       file.write("Login: " + str(responsejs['login']) + "\n")
       part(file, responsejs)
       file.write("Intra: " + "https://profile.intra.42.fr/users/" + str(responsejs['login']) + "\n")
-      day(file, responsejs['cursus_users'][1]['blackholed_at'])
+      if (responsejs['cursus_users'][0]['cursus']['kind'] != "piscine"):
+        day(file, responsejs['cursus_users'][1]['blackholed_at'])
       file.write("Wallet: " + str(responsejs['wallet']) + "\n")
       location(login, file, token)
       if (responsejs['cursus_users'][0]['user']['pool_year'] != None):

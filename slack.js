@@ -37,7 +37,6 @@ app.post('/blackhole', async (req, res) => {
       url: "http://localhost:2424/clear",
     }).then(async (response) => {
       response.data.map(async (element) => {
-        await new Promise(resolve => setTimeout(resolve, 5000));
         try{
         list = await client.users.lookupByEmail({
           email: element
@@ -90,7 +89,6 @@ app.post('/info', async (req, res) => {
           
         }
       }, (error) => {
-        print(error)
         const message = client.chat.postMessage({
           channel: id,
           text: "Bu logine ait bir kullanıcı bulunamadı."
@@ -101,7 +99,6 @@ app.post('/info', async (req, res) => {
   else
     res.end("Bu komut için yetkiniz bulunmamaktadır.")
 })
-
 
 slackEvents.on("message", async(event) => {
   if (event.bot_id != "B04ABUBKSAK" && event.subtype != "message_deleted" && event.text != ""){
@@ -117,6 +114,8 @@ slackEvents.on("message", async(event) => {
         utils.belge(event, id, login, mail);
       if (event['text'] == "!me")
         utils.me(event, id, login, mail);
+      if (event['text'] == '!examrank02' || event['text'] == '!examrank03')
+        utils.exam(login)
         
     }
     catch (error) {
