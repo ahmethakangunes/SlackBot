@@ -9,4 +9,3 @@ Wallet: 5
 Masa: Aktif değil
 Havuz Yılı: 2022
 ---------------------------------------- Projeler ----------------------------------------
-Proje bilgisi bulunamadı.

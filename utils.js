@@ -79,6 +79,7 @@ async function me(event, id, login, slackmail){
   };
   await PythonShell.run('!me.py', options, async function (err, results) {
       if (err){
+        console.log(err)
         const message = await client.chat.postMessage({
           channel: id,
           text: "Lütfen biraz sonra tekrar deneyin."
@@ -157,8 +158,43 @@ async function unban(event, mail, login){
     return ;
 }
 
-async function exam(login){
-    console.log(login)
+async function exam(event, id, login, slackmail){
+  channelid = "C04B78G6MKM"
+  examname = event['text'].replace("!", "");
+  axios({
+    method: 'post',
+    url: "http://localhost:2424/exam",
+    data: {
+      login: login,
+      mail: slackmail,
+    }
+  }).then(async (response) => {
+    if (response.data == "0"){
+      const message = await client.chat.postMessage({
+        channel: id,
+        text: "Title ve mail uyumsuz. Gerekli düzenlemeyi yaptıktan sonra tekrar deneyin."
+      });
+      const emoji = await client.reactions.add({
+        channel: event.channel,
+        name: "x",
+        timestamp: event.event_ts
+      });
+      return ;
+    }
+    try {
+      const message = await client.chat.postMessage({
+        channel: channelid,
+        text: examname + " " + login
+      });
+      const emoji = client.reactions.add({
+        channel: event.channel,
+        name: "white_check_mark",
+        timestamp: event.event_ts
+      });
+    }
+    catch (error){
+    }
+  });
 }
 
 async function info(id, channelid){

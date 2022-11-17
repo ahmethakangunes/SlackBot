@@ -17,7 +17,7 @@ def personalmails(login):
     else:
         return "ahmethakangunessds24@gmail.com"
 
-def _day(file, blackhole):
+def day(file, blackhole):
     if (blackhole != None):
       lastday = datetime.strptime(blackhole,"%Y-%m-%dT%H:%M:%S.%fZ")
       now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

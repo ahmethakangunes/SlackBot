@@ -114,8 +114,8 @@ slackEvents.on("message", async(event) => {
         utils.belge(event, id, login, mail);
       if (event['text'] == "!me")
         utils.me(event, id, login, mail);
-      if (event['text'] == '!examrank02' || event['text'] == '!examrank03')
-        utils.exam(login)
+      if (event['text'] == '!examrank02' || event['text'] == '!examrank03' || event['text'] == '!examrank04' || event['text'] == '!examrank05' || event['text'] == '!examrank06')
+        utils.exam(event, id, login, mail)
         
     }
     catch (error) {
