@@ -23,37 +23,42 @@ app.use(bodyParser.json());
 
 
 app.post('/blackhole', async (req, res) => {
-    res.send("İzinler kontrol ediliyor. Lütfen bekleyiniz.")
-    user = req.body.user_name
-    if (user == "42turkiyepedago" || user == "ahmethakangunes24" || user == "42turkiyeteknik" || user == "nkahrima"){
-    var channel_id = "C04AR4L5RE1";
-    var text = req.body.text;
-    text = text.split(" ");
-    var login = text[0];
-    var command = text[1];
-    var list = []
-    axios({
-      method: 'post',
-      url: "http://localhost:2424/clear",
-    }).then(async (response) => {
-      response.data.map(async (element) => {
-        try{
-        list = await client.users.lookupByEmail({
-          email: element
-        })
-        }
-        catch (error) {
-          return [];
-        }
-      const message = await client.chat.postMessage({
-        channel: channel_id,
-        text: list['user']['profile']['email']
-      });
+  res.send("İzinler kontrol ediliyor. Lütfen bekleyiniz.")
+  user = req.body.user_name
+  if (user == "42turkiyepedago" || user == "ahmethakangunes24" || user == "42turkiyeteknik" || user == "nkahrima"){
+  var channel_id = "C04BMGR8TKN";
+  var text = req.body.text;
+  text = text.split(" ");
+  var login = text[0];
+  var command = text[1];
+  var list = []
+  axios({
+    method: 'post',
+    url: "http://localhost:2424/blackhole",
+  }).then(async (response) => {
+    console.log(response)
+    response.data.map(async (element) => {
+      try{
+      list = await client.users.lookupByEmail({
+        email: element
       })
+      }
+      catch (error) {
+        const message = await client.chat.postMessage({
+          channel: channel_id,
+          text: element
+        });
+        return [];
+      }
+    const message = await client.chat.postMessage({
+      channel: channel_id,
+      text: list['user']['profile']['email']
+    });
     })
-  }
-  else
-    res.end("Bu komut için yetkiniz bulunmamaktadır.")
+  })
+}
+else
+  res.end("Bu komut için yetkiniz bulunmamaktadır.")
 })
 
 app.post('/info', async (req, res) => {
@@ -127,6 +132,7 @@ slackEvents.on("message", async(event) => {
   }
 })
 
-app.listen(PORT, () => {
+
+app.listen(3000, () => {
     console.log("Running..")
 })

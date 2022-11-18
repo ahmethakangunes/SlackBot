@@ -6,12 +6,10 @@ import sys
 from sys import argv
 
 
-projectlist = ["Libft", "get_next_line", "ft_printf", "Born2beroot", \
-		"push_swap", "Exam Rank 02", "minitalk", "minishell" "so_long", \
-			"Exam Rank 03", "Philosophers", "NetPractice", "cub3d", "CPP Module 00", \
-				"CPP Module 01", "CPP Module 02", "CPP Module 03", "CPP Module 04", \
-					"CPP Module 05", "CPP Module 06", "CPP Module 07", "CPP Module 08", \
-						"Exam Rank 04", "Inception", "ft_irc", "ft_containers", "ft_transcendence", "Exam Rank 06"]
+
+part1projects = ["Libft", "get_next_line", "ft_printf", "Born2beroot", "push_swap", "Exam Rank 02", "minitalk", "so_long", "pipex", "FdF", "fract-ol"]
+part2projects = ["minishell", "Exam Rank 03", "Philosophers", "NetPractice", "cub3d", "miniRT", "CPP Module 00", "CPP Module 01", "CPP Module 02", "CPP Module 03", "CPP Module 04", "CPP Module 05", "CPP Module 06", "CPP Module 07", "CPP Module 08", "Exam Rank 04"]
+part3projects = ["webserv", "ft_irc", "ft_containers", "Exam Rank 05", "ft_transcendence", "Exam Rank 06", "Inception"]
 
 def day(file, blackhole):
 	if (blackhole != None):
@@ -46,26 +44,23 @@ def day2(time):
     return(li[0] + " gün")
 
 def part(file, responsejs):
-	global projectlist
+	global part1projects, part2projects, par3projects
 	part = 1
 	projectcount = 0
-	examrank02 = 0
-	examrank03 = 0
+	part1count = 0
+	part2count = 0
 	for i in range(len(responsejs['projects_users'])):
 		validated = responsejs['projects_users'][i]['validated?']
 		projectname = responsejs['projects_users'][i]['project']['name']
-		if projectname in projectlist:
-			if (validated == True):
-				projectcount += 1
-				project = responsejs['projects_users'][i]['project']['name']
-				if (project == "Exam Rank 02"):
-					examrank02 += 1
-				if (project == "Exam Rank 03"):
-					examrank03 += 1
-				if (examrank02 == 1 and projectcount >= 8):
-					part = 2
-				if (examrank03 == 1 and projectcount >= 22):
-					part = 3
+		if (validated == True):
+			if (projectname in part1projects):
+				part1count += 1
+			elif (projectname in part2projects):
+				part2count += 1
+			if (part1count >= 8 and part2count < 15):
+				part = 2
+			if (part1count >= 8 and part2count >= 15):
+				part = 3
 	file.write("Part: " + str(part) + "\n")
 
 
@@ -95,7 +90,7 @@ def getinfo(login, token):
 	response = requests.get('https://api.intra.42.fr' + "{}".format(endpoint), headers=headers)
 	if (response.status_code == 200):
 		responsejs = response.json()
-		file = open(("info/" + login + ".txt"), "w")
+		file = open("info/" + login + ".txt", "w")
 		file.write("Selam, " + str(responsejs['login']) + " kullanıcısının bilgilerini getirdim." + "\n" * 2)
 		file.write("Ad: " + str(responsejs['first_name']).title() + "\n")
 		file.write("Soyad: " + str(responsejs['last_name']).title() + "\n")
@@ -112,3 +107,14 @@ def getinfo(login, token):
 		project(file, responsejs)
 	else:
 		exit (1)
+
+def get_access_token():
+  response = requests.post(
+    "https://api.intra.42.fr/oauth/token",
+    data={"grant_type": "client_credentials"},
+    auth=("u-s4t2ud-05b797961e39f9ca81738308f9b2a7e2ed752549806393581cf56fc0685062bb", "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"),
+  )
+  return response.json()["access_token"]
+
+token = get_access_token()
+getinfo("aerdol", token)

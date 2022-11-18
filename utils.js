@@ -27,7 +27,7 @@ async function belge(event, id, login, slackmail){
       id: id
     }
   }).then(async (response) => {
-    if (response.data == "A"){
+    if (response.data == "0"){
       const message = await client.chat.postMessage({
         channel: id,
         text: "Title ve mail uyumsuz. Gerekli düzenlemeyi yaptıktan sonra tekrar deneyin."
@@ -79,7 +79,6 @@ async function me(event, id, login, slackmail){
   };
   await PythonShell.run('!me.py', options, async function (err, results) {
       if (err){
-        console.log(err)
         const message = await client.chat.postMessage({
           channel: id,
           text: "Lütfen biraz sonra tekrar deneyin."

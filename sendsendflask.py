@@ -17,11 +17,13 @@ def docx():
     slackmail = request.json['mail']
     token = get_access_token()
     list = belge(login, token, slackmail)
-    return list[1].title()
+    if list == 0:
+        return ("0")
+    else:
+        return list[1].title()
 
-
-@app.route("/clear", methods=['POST'])
-async def clear():
+@app.route("/blackhole", methods=['POST'])
+async def blackhole():
     token = get_access_token()
     mails = getmails(token)
     return (mails)

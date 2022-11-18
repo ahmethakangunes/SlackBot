@@ -54,19 +54,32 @@ def personalinfos(login):
     gsheetid = "1WfPZBxW5RhMX5o5jk352f9ZWVxCpMXoe"
     sheet_name = ""
     gsheet_url = "https://docs.google.com/spreadsheets/d/{}/gviz/tq?tqx=out:csv&sheet={}".format(gsheetid, sheet_name)
-    df = pd.read_csv(gsheet_url)
-    searchindex = (df.loc[df["Login"] == login])
-    tolist = searchindex.values.tolist()
+    istanbuldf = pd.read_csv(gsheet_url)
+
+    gsheetid = "1H3yobP6EZZ0NN44R5gkFCzvINgyshV3Y"
+    sheet_name = ""
+    gsheet_url = "https://docs.google.com/spreadsheets/d/{}/gviz/tq?tqx=out:csv&sheet={}".format(gsheetid, sheet_name)
+    kocaelidf = pd.read_csv(gsheet_url)
+    searchistanbul = (istanbuldf.loc[istanbuldf["Login"] == login])
+    searchkocaeli = (kocaelidf.loc[kocaelidf["Login"] == login])
+    istanbullist = searchistanbul.values.tolist()
+    kocaelilist = searchkocaeli.values.tolist()
     infolist = []
-    if (len(tolist) > 0):
-        converdatetime = datetime.datetime.strptime(tolist[0][2], "%Y-%m-%d")
+    if (len(istanbullist) > 0):
+        converdatetime = datetime.datetime.strptime(istanbullist[0][2], "%Y-%m-%d")
         convertformat = converdatetime.strftime('%d.%m.%Y')
         infolist.append(convertformat)
-        infolist.append(tolist[0][3])
+        infolist.append(istanbullist[0][3])
+        return infolist
+    if (len(kocaelilist) > 0):
+        converdatetime = datetime.datetime.strptime(kocaelilist[0][2], "%Y-%m-%d")
+        convertformat = converdatetime.strftime('%d.%m.%Y')
+        infolist.append(convertformat)
+        infolist.append(kocaelilist[0][3])
         return infolist
     else:
         return "ahmethakangunessds24@gmail.com"
-    
+
 def getinfo(login, token):
     headers = {
     'Authorization': 'Bearer ' + token,
@@ -88,7 +101,7 @@ def getinfo(login, token):
 def belge(login, token, slackmail):
     personal = personalinfos(login)
     if (slackmail != personal[1]):
-        return ("false")
+        return (0)
     list = getinfo(login, token)
     replace_dict = {
         "Davut Uzun": str(list[1].title()) + " " + str(list[2].title()),

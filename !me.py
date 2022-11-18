@@ -6,6 +6,10 @@ from datetime import datetime
 import sys
 from sys import argv
 
+part1projects = ["Libft", "get_next_line", "ft_printf", "Born2beroot", "push_swap", "Exam Rank 02", "minitalk", "so_long", "pipex", "FdF", "fract-ol"]
+part2projects = ["minishell", "Exam Rank 03", "Philosophers", "NetPractice", "cub3d", "miniRT", "CPP Module 00", "CPP Module 01", "CPP Module 02", "CPP Module 03", "CPP Module 04", "CPP Module 05", "CPP Module 06", "CPP Module 07", "CPP Module 08", "Exam Rank 04"]
+part3projects = ["webserv", "ft_irc", "ft_containers", "Exam Rank 05", "ft_transcendence", "Exam Rank 06", "Inception"]
+
 def personalmails(login):
     df = pd.read_excel('mails.xlsx')
     df.dropna(inplace = True)
@@ -50,27 +54,24 @@ def day2(time):
     return(li[0] + " gün")
 
 def part(file, responsejs):
-    part = 1
-    projectcount = 0
-    examrank02 = 0
-    examrank03 = 0
-    for i in range(len(responsejs['projects_users'])):
-        status = responsejs['projects_users'][i]['status']
-        point = responsejs['projects_users'][i]['final_mark']
-        if (status == "finished" and int(point) > 75):
-          projectcount += 1
-          project = responsejs['projects_users'][i]['project']['name']
-          if (project == "Exam Rank 02"):
-            examrank02 += 1
-          if (project == "Exam Rank 03"):
-            examrank03 += 1
-          if (examrank02 == 1 and projectcount >= 8):
-              part = 2
-          if (examrank03 == 1 and projectcount >= 22):
-              part = 3
-          if (project == "Libft"):       
-            file.write("Part: " + str(part) + "\n")
-            break
+	global part1projects, part2projects, par3projects
+	part = 1
+	projectcount = 0
+	part1count = 0
+	part2count = 0
+	for i in range(len(responsejs['projects_users'])):
+		validated = responsejs['projects_users'][i]['validated?']
+		projectname = responsejs['projects_users'][i]['project']['name']
+		if (validated == True):
+			if (projectname in part1projects):
+				part1count += 1
+			elif (projectname in part2projects):
+				part2count += 1
+			if (part1count >= 8 and part2count < 15):
+				part = 2
+			if (part1count >= 8 and part2count >= 15):
+				part = 3
+	file.write("Part: " + str(part) + "\n")
 
 def project(file, responsejs):
     file.write("\n" + "-" * 40 + " Projeler " + "-" * 40 + "\n")

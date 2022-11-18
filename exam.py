@@ -20,6 +20,7 @@ def examlogin(login, token, slackmail):
       return 0
   else:
       return 1
+
 def get_access_token():
   response = requests.post(
     "https://api.intra.42.fr/oauth/token",
