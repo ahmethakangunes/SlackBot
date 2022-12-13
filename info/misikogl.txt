@@ -1,0 +1,19 @@
+Selam, misikogl kullanıcısının bilgilerini getirdim.
+
+Ad: Muhammed
+Soyad: Işikoğlu
+Login: misikogl
+Part: 1
+Intra: https://profile.intra.42.fr/users/misikogl
+Black Hole: 23 gün 20 saat 28 dakika 10 saniye
+Wallet: 15
+Masa: None
+Havuz Yılı: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.11.22 Geçen zaman: 16 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.10.15 Geçen zaman: 54 gün
+Proje: minitalk Puan: 100 Teslim Tarihi: 2022.06.30 Geçen zaman: 161 gün
+Proje: Born2beroot Puan: 86 Teslim Tarihi: 2022.06.15 Geçen zaman: 176 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.06.02 Geçen zaman: 189 gün
+Proje: Libft Puan: 100 Teslim Tarihi: 2022.04.04 Geçen zaman: 248 gün
+Proje: get_next_line Puan: 100 Teslim Tarihi: 2022.04.10 Geçen zaman: 242 gün

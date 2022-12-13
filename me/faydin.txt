@@ -1,0 +1,21 @@
+Selam, Ferhat Yiğit Aydın bilgilerini getirdim.
+
+Ad: Ferhat Yiğit
+Soyad: Aydın
+Login: faydin
+Part: 2
+Intra: https://profile.intra.42.fr/users/faydin
+Black Hole: 73 gün 18 saat 29 dakika 25 saniye
+Wallet: 50
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.09.19 Geçen zaman: 67 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.09.19 Geçen zaman: 68 gün
+Proje: push_swap Puan: 100 Teslim Tarihi: 2022.06.29 Geçen zaman: 150 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.06.02 Geçen zaman: 176 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.03.07 Geçen zaman: 263 gün
+Proje: Born2beroot Puan: 125 Teslim Tarihi: 2022.03.05 Geçen zaman: 266 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.18 Geçen zaman: 280 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.12 Geçen zaman: 286 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.30 Geçen zaman: 299 gün

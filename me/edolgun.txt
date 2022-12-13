@@ -1,0 +1,17 @@
+Selam, Erkan Zafer Dolgun bilgilerini getirdim.
+
+Ad: Erkan Zafer
+Soyad: Dolgun
+Login: edolgun
+Part: 1
+Intra: https://profile.intra.42.fr/users/edolgun
+Black Hole: 32 gün 20 saat 56 dakika 10 saniye
+Wallet: 50
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.11.13 Geçen zaman: 29 gün
+Proje: Born2beroot Puan: 120 Teslim Tarihi: 2022.10.22 Geçen zaman: 51 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.08.22 Geçen zaman: 112 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.08.06 Geçen zaman: 128 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.06.26 Geçen zaman: 169 gün

@@ -1,0 +1,19 @@
+Selam, Fatih Bulut bilgilerini getirdim.
+
+Ad: Fatih
+Soyad: Bulut
+Login: fbulut
+Part: 1
+Intra: https://profile.intra.42.fr/users/fbulut
+Black Hole: 13 gün 16 saat 35 dakika 46 saniye
+Wallet: 20
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.08.13 Geçen zaman: 114 gün
+Proje: so_long Puan: 120 Teslim Tarihi: 2022.07.29 Geçen zaman: 129 gün
+Proje: minitalk Puan: 115 Teslim Tarihi: 2022.06.01 Geçen zaman: 187 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.02.23 Geçen zaman: 285 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.07 Geçen zaman: 300 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.16 Geçen zaman: 292 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.15 Geçen zaman: 324 gün

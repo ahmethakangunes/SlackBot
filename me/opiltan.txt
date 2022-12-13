@@ -1,0 +1,21 @@
+Selam, Orhan ömer Piltan bilgilerini getirdim.
+
+Ad: Orhan Ömer
+Soyad: Piltan
+Login: opiltan
+Part: 2
+Intra: https://profile.intra.42.fr/users/opiltan
+Black Hole: 62 gün 21 saat 41 dakika 54 saniye
+Wallet: 50
+Masa: k1m22s03
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.11.27 Geçen zaman: 7 gün
+Proje: push_swap Puan: 100 Teslim Tarihi: 2022.11.17 Geçen zaman: 18 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.10.31 Geçen zaman: 34 gün
+Proje: so_long Puan: 110 Teslim Tarihi: 2022.10.12 Geçen zaman: 53 gün
+Proje: minitalk Puan: 115 Teslim Tarihi: 2022.09.19 Geçen zaman: 76 gün
+Proje: Born2beroot Puan: 115 Teslim Tarihi: 2022.08.24 Geçen zaman: 103 gün
+Proje: get_next_line Puan: 100 Teslim Tarihi: 2022.08.19 Geçen zaman: 107 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.07.04 Geçen zaman: 153 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.03.15 Geçen zaman: 264 gün

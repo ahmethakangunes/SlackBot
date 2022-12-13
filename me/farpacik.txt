@@ -1,0 +1,17 @@
+Selam, Ferman Ali Arpacık bilgilerini getirdim.
+
+Ad: Ferman Ali
+Soyad: Arpacık
+Login: farpacik
+Part: 1
+Intra: https://profile.intra.42.fr/users/farpacik
+Black Hole: 32 gün 16 saat 57 dakika 31 saniye
+Wallet: 8
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: minitalk Puan: 115 Teslim Tarihi: 2022.06.04 Geçen zaman: 183 gün
+Proje: Born2beroot Puan: 125 Teslim Tarihi: 2022.03.18 Geçen zaman: 262 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.28 Geçen zaman: 280 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.20 Geçen zaman: 288 gün
+Proje: Libft Puan: 100 Teslim Tarihi: 2022.02.11 Geçen zaman: 297 gün

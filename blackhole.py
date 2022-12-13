@@ -61,6 +61,6 @@ def get_token():
   response = requests.post(
     "https://api.intra.42.fr/oauth/token",
     data={"grant_type": "client_credentials"},
-    auth=("u-s4t2ud-ad74f3208071d0a40ffd78a2a0a7abc0562e35c85d9343c71717f7bfb5565f95", "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"),
+    auth=("u-s4t2ud-05b797961e39f9ca81738308f9b2a7e2ed752549806393581cf56fc0685062bb", "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"),
   )
   return response.json()["access_token"]

@@ -1,0 +1,26 @@
+Selam, Muhammet Melih Çakay bilgilerini getirdim.
+
+Ad: Muhammet Melih
+Soyad: Çakay
+Login: mcakay
+Part: 2
+Intra: https://profile.intra.42.fr/users/mcakay
+Black Hole: 259 gün 18 saat 33 dakika 55 saniye
+Wallet: 77
+Masa: k1m21s01
+Havuz: 2022
+---------------------------------------- Projeler ----------------------------------------
+Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.11.30 Geçen zaman: 1 gün
+Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.11.25 Geçen zaman: 6 gün
+Proje: CPP Module 00 Puan: 80 Teslim Tarihi: 2022.11.21 Geçen zaman: 10 gün
+Proje: minishell Puan: 101 Teslim Tarihi: 2022.11.14 Geçen zaman: 17 gün
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.10.12 Geçen zaman: 50 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.10.04 Geçen zaman: 58 gün
+Proje: so_long Puan: 110 Teslim Tarihi: 2022.09.19 Geçen zaman: 73 gün
+Proje: push_swap Puan: 125 Teslim Tarihi: 2022.09.12 Geçen zaman: 80 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.08.24 Geçen zaman: 98 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.08.05 Geçen zaman: 117 gün
+Proje: Born2beroot Puan: 108 Teslim Tarihi: 2022.08.04 Geçen zaman: 118 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.07.28 Geçen zaman: 125 gün
+Proje: ft_printf Puan: 125 Teslim Tarihi: 2022.07.25 Geçen zaman: 128 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.07.01 Geçen zaman: 153 gün

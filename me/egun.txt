@@ -1,0 +1,22 @@
+Selam, Eren Gün bilgilerini getirdim.
+
+Ad: Eren
+Soyad: Gün
+Login: egun
+Part: 2
+Intra: https://profile.intra.42.fr/users/egun
+Black Hole: 53 gün 23 saat 57 dakika 14 saniye
+Wallet: 50
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.10.21 Geçen zaman: 52 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.08.05 Geçen zaman: 129 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.08.04 Geçen zaman: 130 gün
+Proje: so_long Puan: 120 Teslim Tarihi: 2022.07.01 Geçen zaman: 164 gün
+Proje: minitalk Puan: 115 Teslim Tarihi: 2022.05.17 Geçen zaman: 209 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.02.25 Geçen zaman: 290 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.11 Geçen zaman: 304 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.02.15 Geçen zaman: 300 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.01.30 Geçen zaman: 316 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.15 Geçen zaman: 331 gün

@@ -77,8 +77,9 @@ async function me(event, id, login, slackmail){
     scriptPath: '/root/SlackBot',
     args: [login, slackmail]
   };
-  await PythonShell.run('!me.py', options, async function (err, results) {
+  await PythonShell.run('me.py', options, async function (err, results) {
       if (err){
+        console.log(err)
         const message = await client.chat.postMessage({
           channel: id,
           text: "Lütfen biraz sonra tekrar deneyin."

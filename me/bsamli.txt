@@ -3,13 +3,15 @@ Selam, Berat Şamlı bilgilerini getirdim.
 Ad: Berat
 Soyad: Şamlı
 Login: bsamli
-Intra: https://profile.intra.42.fr/users/bsamli
 Part: 1
-Black Hole: 171 gün 11 saat 28 dakika 04 saniye
+Intra: https://profile.intra.42.fr/users/bsamli
+Black Hole: 190 gün 13 saat 37 dakika 26 saniye
 Wallet: 15
 Masa: Aktif değil
 Havuz: 2022
 ---------------------------------------- Projeler ----------------------------------------
-Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.11.01 Geçen zaman: 14 gün
-Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.10.26 Geçen zaman: 19 gün
-Proje: Libft Puan: 125 Teslim Tarihi: 2022.10.23 Geçen zaman: 23 gün
+Proje: minitalk Puan: 115 Teslim Tarihi: 2022.11.26 Geçen zaman: 6 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.11.19 Geçen zaman: 13 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.11.01 Geçen zaman: 30 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.10.26 Geçen zaman: 36 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.10.23 Geçen zaman: 40 gün

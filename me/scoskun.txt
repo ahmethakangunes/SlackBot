@@ -1,6 +1,35 @@
-Selam, !me komutunun sana getirdiği bazı şeyler var...
+Selam, Salih Burak Çoşkun bilgilerini getirdim.
+
 Ad: Salih Burak
 Soyad: Çoşkun
 Login: scoskun
-Blackhole: 139 gün 15 saat 36 dakika 32 saniye
-Intra: https://api.intra.42.fr/v2/users/scoskun
+Part: 3
+Intra: https://profile.intra.42.fr/users/scoskun
+Black Hole: 180 gün 16 saat 53 dakika 30 saniye
+Wallet: 141
+Masa: k1m13s01
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: CPP Module 08 Puan: 100 Teslim Tarihi: 2022.12.01 Geçen zaman: 3 gün
+Proje: CPP Module 07 Puan: 100 Teslim Tarihi: 2022.11.28 Geçen zaman: 6 gün
+Proje: CPP Module 06 Puan: 100 Teslim Tarihi: 2022.11.26 Geçen zaman: 9 gün
+Proje: CPP Module 05 Puan: 100 Teslim Tarihi: 2022.11.21 Geçen zaman: 14 gün
+Proje: CPP Module 04 Puan: 80 Teslim Tarihi: 2022.11.12 Geçen zaman: 23 gün
+Proje: CPP Module 03 Puan: 100 Teslim Tarihi: 2022.11.10 Geçen zaman: 25 gün
+Proje: CPP Module 02 Puan: 80 Teslim Tarihi: 2022.11.09 Geçen zaman: 25 gün
+Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.10.31 Geçen zaman: 35 gün
+Proje: CPP Module 00 Puan: 80 Teslim Tarihi: 2022.10.24 Geçen zaman: 41 gün
+Proje: Exam Rank 04 Puan: 100 Teslim Tarihi: 2022.10.20 Geçen zaman: 46 gün
+Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.10.15 Geçen zaman: 50 gün
+Proje: cub3d Puan: 110 Teslim Tarihi: 2022.10.05 Geçen zaman: 61 gün
+Proje: minishell Puan: 98 Teslim Tarihi: 2022.09.01 Geçen zaman: 94 gün
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.07.08 Geçen zaman: 149 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.06.10 Geçen zaman: 178 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.06.04 Geçen zaman: 183 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.05.11 Geçen zaman: 208 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.03.04 Geçen zaman: 275 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.02.18 Geçen zaman: 289 gün
+Proje: Born2beroot Puan: 110 Teslim Tarihi: 2022.02.16 Geçen zaman: 291 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.10 Geçen zaman: 297 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.02 Geçen zaman: 306 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.13 Geçen zaman: 325 gün

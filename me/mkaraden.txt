@@ -1,0 +1,14 @@
+Selam, Mustafa Karadeniz bilgilerini getirdim.
+
+Ad: Mustafa
+Soyad: Karadeniz
+Login: mkaraden
+Part: 1
+Intra: https://profile.intra.42.fr/users/mkaraden
+Black Hole: 123 gün 16 saat 33 dakika 27 saniye
+Wallet: 15
+Masa: k1m26s06
+Havuz: 2022
+---------------------------------------- Projeler ----------------------------------------
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.11.01 Geçen zaman: 33 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.10.22 Geçen zaman: 44 gün

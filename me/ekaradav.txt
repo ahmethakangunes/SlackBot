@@ -1,0 +1,21 @@
+Selam, Emre Karadavut bilgilerini getirdim.
+
+Ad: Emre
+Soyad: Karadavut
+Login: ekaradav
+Part: 2
+Intra: https://profile.intra.42.fr/users/ekaradav
+Black Hole: 68 gün 18 saat 16 dakika 16 saniye
+Wallet: 50
+Masa: k1m14s01
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.11.26 Geçen zaman: 1 saat
+Proje: minishell Puan: 100 Teslim Tarihi: 2022.11.12 Geçen zaman: 13 gün
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.10.06 Geçen zaman: 50 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.08.15 Geçen zaman: 103 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.08.11 Geçen zaman: 106 gün
+Proje: so_long Puan: 113 Teslim Tarihi: 2022.07.02 Geçen zaman: 146 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.06.10 Geçen zaman: 169 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.01.27 Geçen zaman: 303 gün
+Proje: Libft Puan: 115 Teslim Tarihi: 2022.03.03 Geçen zaman: 268 gün

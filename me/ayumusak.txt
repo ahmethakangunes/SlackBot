@@ -1,0 +1,13 @@
+Selam, Ahmet Kaan Yumuşakdiken bilgilerini getirdim.
+
+Ad: Ahmet Kaan
+Soyad: Yumuşakdiken
+Login: ayumusak
+Part: 1
+Intra: https://profile.intra.42.fr/users/ayumusak
+Black Hole: 119 gün 10 saat 13 dakika 32 saniye
+Wallet: 50
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Libft Puan: 109 Teslim Tarihi: 2022.11.25 Geçen zaman: 7 gün

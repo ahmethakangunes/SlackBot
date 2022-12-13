@@ -1,0 +1,16 @@
+Selam, Sefa Taş bilgilerini getirdim.
+
+Ad: Sefa
+Soyad: Taş
+Login: stas
+Part: 1
+Intra: https://profile.intra.42.fr/users/stas
+Black Hole: 175 gün 18 saat 25 dakika 28 saniye
+Wallet: 45
+Masa: k1m22s09
+Havuz: 2022
+---------------------------------------- Projeler ----------------------------------------
+Proje: Born2beroot Puan: 125 Teslim Tarihi: 2022.11.25 Geçen zaman: 1 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.11.17 Geçen zaman: 8 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.11.14 Geçen zaman: 11 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.10.26 Geçen zaman: 30 gün

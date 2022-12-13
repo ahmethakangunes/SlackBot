@@ -36,7 +36,6 @@ app.post('/blackhole', async (req, res) => {
     method: 'post',
     url: "http://localhost:2424/blackhole",
   }).then(async (response) => {
-    console.log(response)
     response.data.map(async (element) => {
       try{
       list = await client.users.lookupByEmail({
@@ -44,10 +43,6 @@ app.post('/blackhole', async (req, res) => {
       })
       }
       catch (error) {
-        const message = await client.chat.postMessage({
-          channel: channel_id,
-          text: element
-        });
         return [];
       }
     const message = await client.chat.postMessage({
@@ -106,7 +101,7 @@ app.post('/info', async (req, res) => {
 })
 
 slackEvents.on("message", async(event) => {
-  if (event.bot_id != "B04ABUBKSAK" && event.subtype != "message_deleted" && event.text != ""){
+  if (event.bot_id != "A04AKSLK2UE" && event.subtype != "message_deleted" && event.text != ""){
     try {
       var id = event.user
       const result = await client.users.info({

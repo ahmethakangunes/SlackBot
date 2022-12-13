@@ -5,7 +5,7 @@ Soyad: Erdöl
 Login: aerdol
 Part: 1
 Intra: https://profile.intra.42.fr/users/aerdol
-Black Hole: 41 gün 22 saat 26 dakika 08 saniye
+Black Hole: 30 gün 15 saat 56 dakika 30 saniye
 Wallet: 5
 Masa: None
 Havuz Yılı: 2022

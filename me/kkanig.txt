@@ -1,0 +1,15 @@
+Selam, Kaan Kanığ bilgilerini getirdim.
+
+Ad: Kaan
+Soyad: Kanığ
+Login: kkanig
+Part: 1
+Intra: https://profile.intra.42.fr/users/kkanig
+Black Hole: 158 gün 18 saat 23 dakika 18 saniye
+Wallet: 15
+Masa: Aktif değil
+Havuz: 2022
+---------------------------------------- Projeler ----------------------------------------
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.11.21 Geçen zaman: 4 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.11.17 Geçen zaman: 8 gün
+Proje: Libft Puan: 100 Teslim Tarihi: 2022.11.11 Geçen zaman: 15 gün

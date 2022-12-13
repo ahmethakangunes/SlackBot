@@ -3,6 +3,29 @@ Selam, Mert Alaşahan bilgilerini getirdim.
 Ad: Mert
 Soyad: Alaşahan
 Login: malasaha
+Part: 3
 Intra: https://profile.intra.42.fr/users/malasaha
-Black Hole: 162 gün 12 saat 18 dakika 37 saniye
-Wallet: 150
+Black Hole: 202 gün 11 saat 34 dakika 46 saniye
+Wallet: 562
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Exam Rank 04 Puan: 100 Teslim Tarihi: 2022.12.12 Geçen zaman: 1 gün
+Proje: CPP Module 08 Puan: 100 Teslim Tarihi: 2022.12.09 Geçen zaman: 4 gün
+Proje: CPP Module 07 Puan: 100 Teslim Tarihi: 2022.12.08 Geçen zaman: 5 gün
+Proje: CPP Module 06 Puan: 100 Teslim Tarihi: 2022.12.06 Geçen zaman: 7 gün
+Proje: CPP Module 05 Puan: 100 Teslim Tarihi: 2022.12.02 Geçen zaman: 11 gün
+Proje: CPP Module 04 Puan: 80 Teslim Tarihi: 2022.11.29 Geçen zaman: 14 gün
+Proje: CPP Module 03 Puan: 100 Teslim Tarihi: 2022.11.25 Geçen zaman: 18 gün
+Proje: CPP Module 02 Puan: 80 Teslim Tarihi: 2022.11.24 Geçen zaman: 19 gün
+Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.11.18 Geçen zaman: 25 gün
+Proje: CPP Module 00 Puan: 80 Teslim Tarihi: 2022.11.11 Geçen zaman: 32 gün
+Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.10.16 Geçen zaman: 58 gün
+Proje: cub3d Puan: 105 Teslim Tarihi: 2022.10.09 Geçen zaman: 65 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.09.23 Geçen zaman: 81 gün
+Proje: minishell Puan: 100 Teslim Tarihi: 2022.09.21 Geçen zaman: 83 gün
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.07.30 Geçen zaman: 136 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.07.01 Geçen zaman: 165 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.06.22 Geçen zaman: 174 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.06.21 Geçen zaman: 175 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.06.10 Geçen zaman: 186 gün

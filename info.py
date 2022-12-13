@@ -44,7 +44,7 @@ def day2(time):
     return(li[0] + " gün")
 
 def part(file, responsejs):
-	global part1projects, part2projects, par3projects
+	global part1projects, part2projects, part3projects
 	part = 1
 	projectcount = 0
 	part1count = 0
@@ -112,7 +112,7 @@ def get_access_token():
   response = requests.post(
     "https://api.intra.42.fr/oauth/token",
     data={"grant_type": "client_credentials"},
-    auth=("u-s4t2ud-05b797961e39f9ca81738308f9b2a7e2ed752549806393581cf56fc0685062bb", "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"),
+    auth=("u-s4t2ud-05b797961e39f9ca81738308f9b2a7e2ed752549806393581cf56fc0685062bb", "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"),
   )
   return response.json()["access_token"]
 

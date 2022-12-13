@@ -107,7 +107,7 @@ def belge(login, token, slackmail):
         "Davut Uzun": str(list[1].title()) + " " + str(list[2].title()),
         "DAVUT": str(list[1]).title(),
         "UZUN": str(list[2].title()),
-        "12.08.1973": str(personal[0]), 
+        "12.08.1973": str(personal[0]),
         "100491": str(list[0]),
         "31.10.2022": list[4]
         }
@@ -122,6 +122,6 @@ def get_access_token():
   response = requests.post(
     "https://api.intra.42.fr/oauth/token",
     data={"grant_type": "client_credentials"},
-    auth=("u-s4t2ud-05b797961e39f9ca81738308f9b2a7e2ed752549806393581cf56fc0685062bb", "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"),
+    auth=("u-s4t2ud-05b797961e39f9ca81738308f9b2a7e2ed752549806393581cf56fc0685062bb", "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"),
   )
   return response.json()["access_token"]

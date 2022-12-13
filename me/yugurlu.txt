@@ -1,14 +1,16 @@
-Selam, yugurlu kullanıcısının bilgilerini getirdim.
+Selam, Yusuf Ugurlu bilgilerini getirdim.
 
 Ad: Yusuf
 Soyad: Ugurlu
 Login: yugurlu
+Part: 1
 Intra: https://profile.intra.42.fr/users/yugurlu
-Black Hole: 167 gün 13 saat 43 dakika 49 saniye
+Black Hole: 168 gün 18 saat 31 dakika 10 saniye
 Wallet: 15
 Masa: Aktif değil
-Havuz: 2022 Eylül
+Havuz: 2022
 ---------------------------------------- Projeler ----------------------------------------
-Proje: get_next_line Puan: 100 Teslim Tarihi: 2022.11.11 Geçen zaman: 3 gün
-Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.11.11 Geçen zaman: 3 gün
-Proje: Libft Puan: 125 Teslim Tarihi: 2022.10.21 Geçen zaman: 24 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.11.24 Geçen zaman: 1 gün
+Proje: get_next_line Puan: 100 Teslim Tarihi: 2022.11.11 Geçen zaman: 14 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.11.11 Geçen zaman: 15 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.10.21 Geçen zaman: 36 gün

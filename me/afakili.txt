@@ -1,0 +1,21 @@
+Selam, Ahmet Can Fakili bilgilerini getirdim.
+
+Ad: Ahmet Can
+Soyad: Fakili
+Login: afakili
+Part: 2
+Intra: https://profile.intra.42.fr/users/afakili
+Black Hole: 44 gün 11 saat 13 dakika 10 saniye
+Wallet: 55
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.12.01 Geçen zaman: 12 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.10.31 Geçen zaman: 43 gün
+Proje: so_long Puan: 110 Teslim Tarihi: 2022.08.19 Geçen zaman: 116 gün
+Proje: push_swap Puan: 100 Teslim Tarihi: 2022.08.17 Geçen zaman: 118 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.06.25 Geçen zaman: 171 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.03.16 Geçen zaman: 271 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.03.01 Geçen zaman: 286 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.22 Geçen zaman: 294 gün
+Proje: Libft Puan: 116 Teslim Tarihi: 2022.02.15 Geçen zaman: 301 gün

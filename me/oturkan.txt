@@ -1,0 +1,22 @@
+Selam, Orhan Türkan bilgilerini getirdim.
+
+Ad: Orhan
+Soyad: Türkan
+Login: oturkan
+Part: 2
+Intra: https://profile.intra.42.fr/users/oturkan
+Black Hole: 60 gün 20 saat 49 dakika 52 saniye
+Wallet: 55
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.09.24 Geçen zaman: 79 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.09.12 Geçen zaman: 91 gün
+Proje: fract-ol Puan: 125 Teslim Tarihi: 2022.07.16 Geçen zaman: 149 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.07.13 Geçen zaman: 152 gün
+Proje: minitalk Puan: 115 Teslim Tarihi: 2022.02.21 Geçen zaman: 294 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.02.18 Geçen zaman: 297 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.02.17 Geçen zaman: 298 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.07 Geçen zaman: 308 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.15 Geçen zaman: 300 gün
+Proje: Libft Puan: 122 Teslim Tarihi: 2022.01.21 Geçen zaman: 325 gün
