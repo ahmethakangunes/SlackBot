@@ -1,0 +1,33 @@
+Selam, Kayra Muhsin Kırımlı bilgilerini getirdim.
+
+Ad: Kayra Muhsin
+Soyad: Kırımlı
+Login: kkirimli
+Part: 2
+Intra: https://profile.intra.42.fr/users/kkirimli
+Black Hole: 153 gün 13 saat 31 dakika 06 saniye
+Wallet: 650
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: CPP Module 08 Puan: 100 Teslim Tarihi: 2022.12.19 Geçen zaman: 1 saat
+Proje: CPP Module 07 Puan: 100 Teslim Tarihi: 2022.12.19 Geçen zaman: 4 saat
+Proje: CPP Module 06 Puan: 100 Teslim Tarihi: 2022.12.16 Geçen zaman: 3 gün
+Proje: CPP Module 05 Puan: 100 Teslim Tarihi: 2022.12.15 Geçen zaman: 4 gün
+Proje: CPP Module 04 Puan: 80 Teslim Tarihi: 2022.12.14 Geçen zaman: 5 gün
+Proje: Exam Rank 04 Puan: 100 Teslim Tarihi: 2022.12.12 Geçen zaman: 7 gün
+Proje: CPP Module 03 Puan: 100 Teslim Tarihi: 2022.12.09 Geçen zaman: 10 gün
+Proje: CPP Module 02 Puan: 80 Teslim Tarihi: 2022.12.07 Geçen zaman: 12 gün
+Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.12.03 Geçen zaman: 16 gün
+Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.11.25 Geçen zaman: 24 gün
+Proje: minishell Puan: 100 Teslim Tarihi: 2022.11.17 Geçen zaman: 31 gün
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.11.17 Geçen zaman: 32 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.09.19 Geçen zaman: 91 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.04.28 Geçen zaman: 234 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.01.31 Geçen zaman: 322 gün
+Proje: so_long Puan: 125 Teslim Tarihi: 2022.03.16 Geçen zaman: 278 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.02.01 Geçen zaman: 320 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.01.26 Geçen zaman: 326 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.01.21 Geçen zaman: 332 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.03.30 Geçen zaman: 264 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.13 Geçen zaman: 340 gün

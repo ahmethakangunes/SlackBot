@@ -1,0 +1,16 @@
+Selam, Serkan Yılmaz bilgilerini getirdim.
+
+Ad: Serkan
+Soyad: Yılmaz
+Login: seryilma
+Part: 1
+Intra: https://profile.intra.42.fr/users/seryilma
+Black Hole: 7 gün 7 saat 36 dakika 51 saniye
+Wallet: 25
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.10.08 Geçen zaman: 68 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.03.09 Geçen zaman: 281 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.03.07 Geçen zaman: 283 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.02.23 Geçen zaman: 295 gün

@@ -1,0 +1,23 @@
+Selam, Ayşe Hümeyra Cengiz bilgilerini getirdim.
+
+Ad: Ayşe Hümeyra
+Soyad: Cengiz
+Login: acengiz
+Part: 1
+Intra: https://profile.intra.42.fr/users/acengiz
+Black Hole: 47 gün 7 saat 09 dakika 19 saniye
+Wallet: 50
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: push_swap Puan: 125 Teslim Tarihi: 2022.09.05 Geçen zaman: 105 gün
+Proje: so_long Puan: 110 Teslim Tarihi: 2022.08.12 Geçen zaman: 129 gün
+Proje: minitalk Puan: 110 Teslim Tarihi: 2022.07.28 Geçen zaman: 144 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.05.08 Geçen zaman: 225 gün
+Proje: C Piscine C 06 Puan: 100 Teslim Tarihi: 2021.09.23 Geçen zaman: 452 gün
+Proje: C Piscine C 03 Puan: 100 Teslim Tarihi: 2021.09.15 Geçen zaman: 460 gün
+Proje: C Piscine C 01 Puan: 100 Teslim Tarihi: 2021.09.09 Geçen zaman: 466 gün
+Proje: C Piscine Rush 00 Puan: 100 Teslim Tarihi: 2021.09.07 Geçen zaman: 468 gün
+Proje: C Piscine C 00 Puan: 92 Teslim Tarihi: 2021.09.08 Geçen zaman: 467 gün
+Proje: C Piscine Shell 01 Puan: 100 Teslim Tarihi: 2021.09.08 Geçen zaman: 467 gün
+Proje: C Piscine Shell 00 Puan: 100 Teslim Tarihi: 2021.09.06 Geçen zaman: 469 gün

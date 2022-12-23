@@ -5,31 +5,31 @@ Soyad: Çoşkun
 Login: scoskun
 Part: 3
 Intra: https://profile.intra.42.fr/users/scoskun
-Black Hole: 180 gün 16 saat 53 dakika 30 saniye
+Black Hole: 173 gün 11 saat 12 dakika 28 saniye
 Wallet: 141
-Masa: k1m13s01
+Masa: Aktif değil
 Havuz: 2021
 ---------------------------------------- Projeler ----------------------------------------
-Proje: CPP Module 08 Puan: 100 Teslim Tarihi: 2022.12.01 Geçen zaman: 3 gün
-Proje: CPP Module 07 Puan: 100 Teslim Tarihi: 2022.11.28 Geçen zaman: 6 gün
-Proje: CPP Module 06 Puan: 100 Teslim Tarihi: 2022.11.26 Geçen zaman: 9 gün
-Proje: CPP Module 05 Puan: 100 Teslim Tarihi: 2022.11.21 Geçen zaman: 14 gün
-Proje: CPP Module 04 Puan: 80 Teslim Tarihi: 2022.11.12 Geçen zaman: 23 gün
-Proje: CPP Module 03 Puan: 100 Teslim Tarihi: 2022.11.10 Geçen zaman: 25 gün
-Proje: CPP Module 02 Puan: 80 Teslim Tarihi: 2022.11.09 Geçen zaman: 25 gün
-Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.10.31 Geçen zaman: 35 gün
-Proje: CPP Module 00 Puan: 80 Teslim Tarihi: 2022.10.24 Geçen zaman: 41 gün
-Proje: Exam Rank 04 Puan: 100 Teslim Tarihi: 2022.10.20 Geçen zaman: 46 gün
-Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.10.15 Geçen zaman: 50 gün
-Proje: cub3d Puan: 110 Teslim Tarihi: 2022.10.05 Geçen zaman: 61 gün
-Proje: minishell Puan: 98 Teslim Tarihi: 2022.09.01 Geçen zaman: 94 gün
-Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.07.08 Geçen zaman: 149 gün
-Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.06.10 Geçen zaman: 178 gün
-Proje: push_swap Puan: 84 Teslim Tarihi: 2022.06.04 Geçen zaman: 183 gün
-Proje: so_long Puan: 100 Teslim Tarihi: 2022.05.11 Geçen zaman: 208 gün
-Proje: minitalk Puan: 125 Teslim Tarihi: 2022.03.04 Geçen zaman: 275 gün
-Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.02.18 Geçen zaman: 289 gün
-Proje: Born2beroot Puan: 110 Teslim Tarihi: 2022.02.16 Geçen zaman: 291 gün
-Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.10 Geçen zaman: 297 gün
-Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.02 Geçen zaman: 306 gün
-Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.13 Geçen zaman: 325 gün
+Proje: CPP Module 08 Puan: 100 Teslim Tarihi: 2022.12.01 Geçen zaman: 14 gün
+Proje: CPP Module 07 Puan: 100 Teslim Tarihi: 2022.11.28 Geçen zaman: 17 gün
+Proje: CPP Module 06 Puan: 100 Teslim Tarihi: 2022.11.26 Geçen zaman: 19 gün
+Proje: CPP Module 05 Puan: 100 Teslim Tarihi: 2022.11.21 Geçen zaman: 24 gün
+Proje: CPP Module 04 Puan: 80 Teslim Tarihi: 2022.11.12 Geçen zaman: 33 gün
+Proje: CPP Module 03 Puan: 100 Teslim Tarihi: 2022.11.10 Geçen zaman: 35 gün
+Proje: CPP Module 02 Puan: 80 Teslim Tarihi: 2022.11.09 Geçen zaman: 36 gün
+Proje: CPP Module 01 Puan: 100 Teslim Tarihi: 2022.10.31 Geçen zaman: 45 gün
+Proje: CPP Module 00 Puan: 80 Teslim Tarihi: 2022.10.24 Geçen zaman: 52 gün
+Proje: Exam Rank 04 Puan: 100 Teslim Tarihi: 2022.10.20 Geçen zaman: 56 gün
+Proje: NetPractice Puan: 100 Teslim Tarihi: 2022.10.15 Geçen zaman: 61 gün
+Proje: cub3d Puan: 110 Teslim Tarihi: 2022.10.05 Geçen zaman: 71 gün
+Proje: minishell Puan: 98 Teslim Tarihi: 2022.09.01 Geçen zaman: 105 gün
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.07.08 Geçen zaman: 160 gün
+Proje: Exam Rank 03 Puan: 100 Teslim Tarihi: 2022.06.10 Geçen zaman: 188 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.06.04 Geçen zaman: 194 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.05.11 Geçen zaman: 218 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.03.04 Geçen zaman: 286 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.02.18 Geçen zaman: 300 gün
+Proje: Born2beroot Puan: 110 Teslim Tarihi: 2022.02.16 Geçen zaman: 301 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.10 Geçen zaman: 308 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.02 Geçen zaman: 316 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.13 Geçen zaman: 336 gün

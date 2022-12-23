@@ -5,12 +5,12 @@ Soyad: Demir
 Login: tdemir
 Part: 1
 Intra: https://profile.intra.42.fr/users/tdemir
-Black Hole: 167 gün 8 saat 25 dakika 18 saniye
+Black Hole: 154 gün 20 saat 45 dakika 24 saniye
 Wallet: 15
-Masa: Aktif değil
+Masa: k1m08s06
 Havuz: 2022
 ---------------------------------------- Projeler ----------------------------------------
-Proje: Born2beroot Puan: 125 Teslim Tarihi: 2022.11.28 Geçen zaman: 5 gün
-Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.11.15 Geçen zaman: 18 gün
-Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.11.11 Geçen zaman: 22 gün
-Proje: Libft Puan: 115 Teslim Tarihi: 2022.10.22 Geçen zaman: 42 gün
+Proje: Born2beroot Puan: 125 Teslim Tarihi: 2022.11.28 Geçen zaman: 20 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.11.15 Geçen zaman: 34 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.11.11 Geçen zaman: 38 gün
+Proje: Libft Puan: 115 Teslim Tarihi: 2022.10.22 Geçen zaman: 57 gün

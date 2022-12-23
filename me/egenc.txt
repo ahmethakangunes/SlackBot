@@ -1,0 +1,16 @@
+Selam, Ebrar Genç bilgilerini getirdim.
+
+Ad: Ebrar
+Soyad: Genç
+Login: egenc
+Part: 2
+Intra: https://profile.intra.42.fr/users/egenc
+Black Hole: 2 gün 20 saat 37 dakika 14 saniye
+Wallet: 150
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.12.16 Geçen zaman: 3 gün
+Proje: push_swap Puan: 84 Teslim Tarihi: 2022.11.13 Geçen zaman: 36 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.10.16 Geçen zaman: 64 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.10.02 Geçen zaman: 78 gün

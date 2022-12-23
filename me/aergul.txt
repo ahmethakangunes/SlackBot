@@ -5,5 +5,17 @@ Soyad: Ergül
 Login: aergul
 Part: 2
 Intra: https://profile.intra.42.fr/users/aergul
-Black Hole: 55 gün 18 saat 33 dakika 02 saniye
+Black Hole: 42 gün 11 saat 52 dakika 10 saniye
 Wallet: 60
+Masa: Aktif değil
+Havuz: 2021
+---------------------------------------- Projeler ----------------------------------------
+Proje: Philosophers Puan: 100 Teslim Tarihi: 2022.11.21 Geçen zaman: 27 gün
+Proje: Exam Rank 02 Puan: 100 Teslim Tarihi: 2022.10.31 Geçen zaman: 49 gün
+Proje: push_swap Puan: 90 Teslim Tarihi: 2022.10.10 Geçen zaman: 70 gün
+Proje: so_long Puan: 100 Teslim Tarihi: 2022.05.26 Geçen zaman: 207 gün
+Proje: minitalk Puan: 125 Teslim Tarihi: 2022.03.22 Geçen zaman: 271 gün
+Proje: Born2beroot Puan: 100 Teslim Tarihi: 2022.02.19 Geçen zaman: 303 gün
+Proje: ft_printf Puan: 100 Teslim Tarihi: 2022.02.15 Geçen zaman: 307 gün
+Proje: get_next_line Puan: 125 Teslim Tarihi: 2022.02.10 Geçen zaman: 312 gün
+Proje: Libft Puan: 125 Teslim Tarihi: 2022.01.31 Geçen zaman: 322 gün
