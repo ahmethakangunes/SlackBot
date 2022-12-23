@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.post('/blackhole', async (req, res) => {
   res.send("İzinler kontrol ediliyor. Lütfen bekleyiniz.")
   user = req.body.user_name
-  if (user == "42turkiyepedago" || user == "ahmethakangunes24" || user == "42turkiyeteknik" || user == "nkahrima"){
+  if (user == "42turkiyepedago" || user == "ahmethakangunes24" || user == "42turkiyeteknik"){
   var channel_id = "C04BMGR8TKN";
   var text = req.body.text;
   text = text.split(" ");

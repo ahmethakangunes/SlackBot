@@ -51,12 +51,12 @@ class DocxKeyWordsReplace:
                 ParagraphsKeyWordsReplace.p_replace(paragraph,x,key,value)
 
 def personalinfos(login):
-    gsheetid = "1WfPZBxW5RhMX5o5jk352f9ZWVxCpMXoe"
+    gsheetid = "xxxx"
     sheet_name = ""
     gsheet_url = "https://docs.google.com/spreadsheets/d/{}/gviz/tq?tqx=out:csv&sheet={}".format(gsheetid, sheet_name)
     istanbuldf = pd.read_csv(gsheet_url)
 
-    gsheetid = "1H3yobP6EZZ0NN44R5gkFCzvINgyshV3Y"
+    gsheetid = "xxxx"
     sheet_name = ""
     gsheet_url = "https://docs.google.com/spreadsheets/d/{}/gviz/tq?tqx=out:csv&sheet={}".format(gsheetid, sheet_name)
     kocaelidf = pd.read_csv(gsheet_url)
@@ -122,6 +122,6 @@ def get_access_token():
   response = requests.post(
     "https://api.intra.42.fr/oauth/token",
     data={"grant_type": "client_credentials"},
-    auth=("u-s4t2ud-05b797961e39f9ca81738308f9b2a7e2ed752549806393581cf56fc0685062bb", "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"),
+    auth=("u-s4t2ud-xxxx", "s-s4t2ud-xxxx"),
   )
   return response.json()["access_token"]
